@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>使用pip安裝mkdocs - MkDocs 使用筆記</title>
+      
+      
+      
+        <link rel="canonical" href="https://github.com/foreachsam/book-util-mkdocs/content/start/install-mkdocs/">
+      
+      
+        <meta name="author" content="foreachsam">
+      
+    
+    <meta property="og:url" content="https://github.com/foreachsam/book-util-mkdocs/content/start/install-mkdocs/">
+    <meta property="og:title" content="MkDocs 使用筆記">
+    <meta property="og:image" content="https://github.com/foreachsam/book-util-mkdocs/content/start/install-mkdocs//../../../">
+    <meta name="apple-mobile-web-app-title" content="MkDocs 使用筆記">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../../../assets/images/favicon-e565ddfa3b.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../../assets/fonts/icon.eot?52m981');
+      	src: url('../../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../../assets/stylesheets/application-b64b728552.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono">
+      <style>
+        body, input {
+          font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Roboto Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+    <script src="../../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-teal palette-accent-light-teal">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                準備工作 <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        使用pip安裝mkdocs
+      </div>
+    </div>
+    
+    
+      
+      <div class="button button-github" role="button" aria-label="GitHub">
+        <a href="https://github.com/foreachsam/book-util-mkdocs" title="@foreachsam/book-util-mkdocs on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+      </div>
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="/" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>MkDocs 使用筆記 </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="首頁" href="../../..">
+      首頁
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">準備工作</span>
+    <ul>
+      
+        
+  <li>
+    <a class="" title="使用pyenv安裝python" href="../install-pyenv/">
+      使用pyenv安裝python
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="current" title="使用pip安裝mkdocs" href="./">
+      使用pip安裝mkdocs
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="前置作業" href="#_1">
+                前置作業
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="安裝" href="#_2">
+                安裝
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="觀看說明" href="#_3">
+                觀看說明
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="觀看版本" href="#_4">
+                觀看版本
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="更多參考" href="#_5">
+                更多參考
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+        </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+            
+              
+              <li>
+                <a href="https://github.com/foreachsam/book-util-mkdocs" target="_blank" title="@foreachsam/book-util-mkdocs on GitHub">
+                  @foreachsam/book-util-mkdocs on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="pipmkdocs">使用「pip」安裝「MkDocs」</h1>
+<h2 id="_1">前置作業</h2>
+<p>若沒使用「pyenv」，這個步驟可以省略。</p>
+<p>指定目前Shell要使用的python版本。</p>
+<pre class="code"><code class="language-sh">$ pyenv shell 3.4.4</code></pre>
+
+
+<p>指定目前資料夾要使用的python版本</p>
+<pre class="code"><code class="language-sh">$ pyenv local 3.4.4</code></pre>
+
+
+<p><code>pyenv local</code> 這個指令，就會目前產生「.python-version」</p>
+<pre class="code"><code>$ cat .python-version</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>3.4.4</code></pre>
+
+
+<p>以後進入這個資料夾或子資料夾，就會使用「3.4.4」，但若有使用<code>pyenv shell</code>指定，則會先採用<code>pyenv shell</code>的設定。</p>
+<h2 id="_2">安裝</h2>
+<p>安裝「<a href="https://pypi.python.org/pypi/mkdocs">MkDocs</a>」</p>
+<pre class="code"><code class="language-sh">$ pip install mkdocs</code></pre>
+
+
+<h2 id="_3">觀看說明</h2>
+<pre class="code"><code class="language-sh">$ mkdocs -h</code></pre>
+
+
+<p>或</p>
+<pre class="code"><code class="language-sh">$ mkdocs --help</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code class="language-sh">Usage: mkdocs [OPTIONS] COMMAND [ARGS]...
+
+  MkDocs - Project documentation with Markdown.
+
+Options:
+  -V, --version  Show the version and exit.
+  -q, --quiet    Silence warnings
+  -v, --verbose  Enable verbose output
+  -h, --help     Show this message and exit.
+
+Commands:
+  build      Build the MkDocs documentation
+  gh-deploy  Deploy your documentation to GitHub Pages
+  json       Build the MkDocs documentation to JSON files...
+  new        Create a new MkDocs project
+  serve      Run the builtin development server</code></pre>
+
+
+<h2 id="_4">觀看版本</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ mkdocs -V</code></pre>
+
+
+<p>或</p>
+<pre class="code"><code class="language-sh">$ mkdocs --version</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>mkdocs, version 0.15.3</code></pre>
+
+
+<h2 id="_5">更多參考</h2>
+<ul>
+<li>MkDocs / <a href="http://www.mkdocs.org/#installation">Installation</a></li>
+</ul>
+          <aside class="copyright" role="note">
+            
+              Copyright (c) foreachsam &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../install-pyenv/" title="使用pyenv安裝python">
+          <span class="direction">
+            上一頁
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                使用pyenv安裝python
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div></article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../../assets/javascripts/application-a10a824a49.js"></script>
+    
+    
+  </body>
+</html>

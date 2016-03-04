@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>使用pyenv安裝python - MkDocs 使用筆記</title>
+      
+      
+      
+        <link rel="canonical" href="https://github.com/foreachsam/book-util-mkdocs/content/start/install-pyenv/">
+      
+      
+        <meta name="author" content="foreachsam">
+      
+    
+    <meta property="og:url" content="https://github.com/foreachsam/book-util-mkdocs/content/start/install-pyenv/">
+    <meta property="og:title" content="MkDocs 使用筆記">
+    <meta property="og:image" content="https://github.com/foreachsam/book-util-mkdocs/content/start/install-pyenv//../../../">
+    <meta name="apple-mobile-web-app-title" content="MkDocs 使用筆記">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../../../assets/images/favicon-e565ddfa3b.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../../assets/fonts/icon.eot?52m981');
+      	src: url('../../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../../assets/stylesheets/application-b64b728552.css">
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono">
+      <style>
+        body, input {
+          font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Roboto Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+    <script src="../../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-teal palette-accent-light-teal">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+              
+                準備工作 <i class="icon icon-link"></i>
+              
+            
+          </span>
+        
+        使用pyenv安裝python
+      </div>
+    </div>
+    
+    
+      
+      <div class="button button-github" role="button" aria-label="GitHub">
+        <a href="https://github.com/foreachsam/book-util-mkdocs" title="@foreachsam/book-util-mkdocs on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+      </div>
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="/" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>MkDocs 使用筆記 </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="首頁" href="../../..">
+      首頁
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <span class="section">準備工作</span>
+    <ul>
+      
+        
+  <li>
+    <a class="current" title="使用pyenv安裝python" href="./">
+      使用pyenv安裝python
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="安裝「pyenv」" href="#pyenv">
+                安裝「pyenv」
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="安裝「Python」" href="#python">
+                安裝「Python」
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="關鍵字查詢" href="#_1">
+                關鍵字查詢
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="更多參考" href="#_2">
+                更多參考
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="使用pip安裝mkdocs" href="../install-mkdocs/">
+      使用pip安裝mkdocs
+    </a>
+    
+  </li>
+
+      
+    </ul>
+  </li>
+
+          
+        </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+            
+              
+              <li>
+                <a href="https://github.com/foreachsam/book-util-mkdocs" target="_blank" title="@foreachsam/book-util-mkdocs on GitHub">
+                  @foreachsam/book-util-mkdocs on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="pyenvpython">使用「pyenv」安裝「Python」</h1>
+<p>要使用「MkDocs」必須要有「Python」的環境，本書撰寫的過程，測試的系統是在「Xubuntu 14.04 64位元」下寫成的。</p>
+<p>內建是有「Python」，而我會習慣使用「pyenv」來安裝不同的「Python」來做一些測試，所以已經有「Python」的系統，就可以直接跳下一頁。</p>
+<h2 id="pyenv">安裝「pyenv」</h2>
+<p>可以到「github / <a href="https://github.com/yyuu/pyenv">pyenv</a>」觀看安裝說明。</p>
+<pre class="code"><code class="language-sh">$ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm</code></pre>
+
+
+<p>clone 「pyenv」</p>
+<pre class="code"><code class="language-sh">$ git clone https://github.com/yyuu/pyenv.git ~/.pyenv</code></pre>
+
+
+<p>設定</p>
+<pre class="code"><code class="language-sh">echo 'export PYENV_ROOT=&quot;$HOME/.pyenv&quot;' &gt;&gt; ~/.bashrc
+echo 'export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;' &gt;&gt; ~/.bashrc
+echo 'eval &quot;$(pyenv init -)&quot;' &gt;&gt; ~/.bashrc</code></pre>
+
+
+<h2 id="python">安裝「Python」</h2>
+<p>查詢目前有哪些版本可以安裝</p>
+<pre class="code"><code class="language-sh">$ pyenv install -l</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>Available versions:
+  2.1.3
+  2.2.3
+  2.3.7
+  2.4
+  2.4.1
+  2.4.2
+  2.4.3
+  2.4.4
+  2.4.5
+  2.4.6
+  2.5
+  2.5.1
+  2.5.2
+  2.5.3
+  2.5.4
+  2.5.5
+  2.5.6
+  2.6.6
+  2.6.7
+  2.6.8
+  2.6.9
+  2.7-dev
+  2.7
+  2.7.1
+  2.7.2
+  2.7.3
+  2.7.4
+  2.7.5
+  2.7.6
+  2.7.7
+  2.7.8
+  2.7.9
+  2.7.10
+  2.7.11
+  3.0.1
+  3.1
+  3.1.1
+  3.1.2
+  3.1.3
+  3.1.4
+  3.1.5
+  3.2-dev
+  3.2
+  3.2.1
+  3.2.2
+  3.2.3
+  3.2.4
+  3.2.5
+  3.2.6
+  3.3.0
+  3.3-dev
+  3.3.1
+  3.3.2
+  3.3.3
+  3.3.4
+  3.3.5
+  3.3.6
+  3.4.0
+  3.4-dev
+  3.4.1
+  3.4.2
+  3.4.3
+  3.4.4
+  3.5.0
+  3.5-dev
+  3.5.1
+  3.6-dev
+  anaconda-1.4.0
+  anaconda-1.5.0
+  anaconda-1.5.1
+  anaconda-1.6.0
+  anaconda-1.6.1
+  anaconda-1.7.0
+  anaconda-1.8.0
+  anaconda-1.9.0
+  anaconda-1.9.1
+  anaconda-1.9.2
+  anaconda-2.0.0
+  anaconda-2.0.1
+  anaconda-2.1.0
+  anaconda-2.2.0
+  anaconda-2.3.0
+  anaconda-2.4.0
+  anaconda2-2.4.0
+  anaconda2-2.4.1
+  anaconda2-2.5.0
+  anaconda3-2.0.0
+  anaconda3-2.0.1
+  anaconda3-2.1.0
+  anaconda3-2.2.0
+  anaconda3-2.3.0
+  anaconda3-2.4.0
+  anaconda3-2.4.1
+  anaconda3-2.5.0
+  ironpython-dev
+  ironpython-2.7.4
+  ironpython-2.7.5
+  jython-dev
+  jython-2.5.0
+  jython-2.5-dev
+  jython-2.5.1
+  jython-2.5.2
+  jython-2.5.3
+  jython-2.5.4-rc1
+  jython-2.7.0
+  jython-2.7.1b1
+  jython-2.7.1b2
+  miniconda-latest
+  miniconda-2.2.2
+  miniconda-3.0.0
+  miniconda-3.0.4
+  miniconda-3.0.5
+  miniconda-3.3.0
+  miniconda-3.4.2
+  miniconda-3.7.0
+  miniconda-3.8.3
+  miniconda-3.9.1
+  miniconda-3.10.1
+  miniconda-3.16.0
+  miniconda-3.18.3
+  miniconda2-latest
+  miniconda2-3.18.3
+  miniconda2-3.19.0
+  miniconda3-latest
+  miniconda3-2.2.2
+  miniconda3-3.0.0
+  miniconda3-3.0.4
+  miniconda3-3.0.5
+  miniconda3-3.3.0
+  miniconda3-3.4.2
+  miniconda3-3.7.0
+  miniconda3-3.8.3
+  miniconda3-3.9.1
+  miniconda3-3.10.1
+  miniconda3-3.16.0
+  miniconda3-3.18.3
+  miniconda3-3.19.0
+  pypy-c-jit-latest
+  pypy-c-nojit-latest
+  pypy-dev
+  pypy-stm-2.3
+  pypy-portable-2.3.1
+  pypy-portable-2.4
+  pypy-portable-2.5
+  pypy-portable-2.5.1
+  pypy-stm-2.5.1
+  pypy-portable-2.6
+  pypy-portable-2.6.1
+  pypy-portable-4.0
+  pypy-portable-4.0.1
+  pypy-1.5-src
+  pypy-1.5
+  pypy-1.6
+  pypy-1.7-dev
+  pypy-1.7
+  pypy-1.8-dev
+  pypy-1.8
+  pypy-1.9-dev
+  pypy-1.9
+  pypy-2.0-dev
+  pypy-2.0-src
+  pypy-2.0
+  pypy-2.0.1-src
+  pypy-2.0.1
+  pypy-2.0.2-src
+  pypy-2.0.2
+  pypy-2.1-src
+  pypy-2.1
+  pypy-2.2-src
+  pypy-2.2
+  pypy-2.2.1-src
+  pypy-2.2.1
+  pypy-2.3-src
+  pypy-2.3
+  pypy-2.3.1-src
+  pypy-2.3.1
+  pypy-2.4.0-src
+  pypy-2.4.0
+  pypy-2.4-beta1-src
+  pypy-2.4-beta1
+  pypy-2.5.0-src
+  pypy-2.5.0
+  pypy-2.5.1-src
+  pypy-2.5.1
+  pypy-2.6.0-src
+  pypy-2.6.0
+  pypy-2.6.1-src
+  pypy-2.6.1
+  pypy-4.0.0-src
+  pypy-4.0.0
+  pypy-4.0.1-src
+  pypy-4.0.1
+  pypy3-dev
+  pypy3-portable-2.3.1
+  pypy3-portable-2.4
+  pypy3-2.3.1-src
+  pypy3-2.3.1
+  pypy3-2.4.0-src
+  pypy3-2.4.0
+  stackless-dev
+  stackless-2.7-dev
+  stackless-2.7.2
+  stackless-2.7.3
+  stackless-2.7.4
+  stackless-2.7.5
+  stackless-2.7.6
+  stackless-2.7.7
+  stackless-2.7.8
+  stackless-3.2-dev
+  stackless-3.2.2
+  stackless-3.2.5
+  stackless-3.3-dev
+  stackless-3.3.5
+  stackless-3.4.1</code></pre>
+
+
+<p>安裝「3.4.4」</p>
+<pre class="code"><code>$ pyenv install 3.4.4</code></pre>
+
+
+<h2 id="_1">關鍵字查詢</h2>
+<ul>
+<li><a href="https://www.google.com.tw/#q=pyenv">pyenv</a></li>
+<li><a href="https://www.google.com.tw/#q=pyenv&amp;tbs=lr:lang_1zh-CN|lang_1zh-TW&amp;lr=lang_zh-CN|lang_zh-TW">pyenv(所有中文網頁)</a></li>
+<li><a href="https://www.google.com.tw/#q=pyenv&amp;lr=lang_zh-TW&amp;tbs=lr:lang_1zh-TW">pyenv(繁體中文網頁)</a></li>
+</ul>
+<h2 id="_2">更多參考</h2>
+<ul>
+<li><a href="http://blog.codylab.com/python-pyenv-management/">使用 Pyenv 管理多個 Python 版本</a></li>
+<li><a href="http://seisman.info/python-pyenv.html">Python多版本共存之pyenv </a></li>
+<li><a href="http://missions5.blogspot.tw/2014/06/pre-surveyvirtualenv-pythonbrew-pyenv.html">[pre-survey]virtualenv, pythonbrew 和 pyenv有什麼不同, 該選哪一個?</a></li>
+</ul>
+          <aside class="copyright" role="note">
+            
+              Copyright (c) foreachsam &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../../.." title="首頁">
+          <span class="direction">
+            上一頁
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                首頁
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../install-mkdocs/" title="使用pip安裝mkdocs">
+          <span class="direction">
+            下一頁
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                使用pip安裝mkdocs
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div></article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../../assets/javascripts/application-a10a824a49.js"></script>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,79 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Mkdocs \u4f7f\u7528\u7b46\u8a18\n\n\n\u9019\u662f\u4f7f\u7528\u300c\nMkDocs\n\u300d\u7684\u7c21\u55ae\u7d00\u9304\u3002",
+            "title": "\u9996\u9801"
+        },
+        {
+            "location": "/#mkdocs",
+            "text": "\u9019\u662f\u4f7f\u7528\u300c MkDocs \u300d\u7684\u7c21\u55ae\u7d00\u9304\u3002",
+            "title": "Mkdocs \u4f7f\u7528\u7b46\u8a18"
+        },
+        {
+            "location": "/content/start/install-pyenv/",
+            "text": "\u4f7f\u7528\u300cpyenv\u300d\u5b89\u88dd\u300cPython\u300d\n\n\n\u8981\u4f7f\u7528\u300cMkDocs\u300d\u5fc5\u9808\u8981\u6709\u300cPython\u300d\u7684\u74b0\u5883\uff0c\u672c\u66f8\u64b0\u5beb\u7684\u904e\u7a0b\uff0c\u6e2c\u8a66\u7684\u7cfb\u7d71\u662f\u5728\u300cXubuntu 14.04 64\u4f4d\u5143\u300d\u4e0b\u5beb\u6210\u7684\u3002\n\n\n\u5167\u5efa\u662f\u6709\u300cPython\u300d\uff0c\u800c\u6211\u6703\u7fd2\u6163\u4f7f\u7528\u300cpyenv\u300d\u4f86\u5b89\u88dd\u4e0d\u540c\u7684\u300cPython\u300d\u4f86\u505a\u4e00\u4e9b\u6e2c\u8a66\uff0c\u6240\u4ee5\u5df2\u7d93\u6709\u300cPython\u300d\u7684\u7cfb\u7d71\uff0c\u5c31\u53ef\u4ee5\u76f4\u63a5\u8df3\u4e0b\u4e00\u9801\u3002\n\n\n\u5b89\u88dd\u300cpyenv\u300d\n\n\n\u53ef\u4ee5\u5230\u300cgithub / \npyenv\n\u300d\u89c0\u770b\u5b89\u88dd\u8aaa\u660e\u3002\n\n\n$ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm\n\n\n\n\nclone \u300cpyenv\u300d\n\n\n$ git clone https://github.com/yyuu/pyenv.git ~/.pyenv\n\n\n\n\n\u8a2d\u5b9a\n\n\necho 'export PYENV_ROOT=\n$HOME/.pyenv\n' \n ~/.bashrc\necho 'export PATH=\n$PYENV_ROOT/bin:$PATH\n' \n ~/.bashrc\necho 'eval \n$(pyenv init -)\n' \n ~/.bashrc\n\n\n\n\n\u5b89\u88dd\u300cPython\u300d\n\n\n\u67e5\u8a62\u76ee\u524d\u6709\u54ea\u4e9b\u7248\u672c\u53ef\u4ee5\u5b89\u88dd\n\n\n$ pyenv install -l\n\n\n\n\n\u986f\u793a\n\n\nAvailable versions:\n  2.1.3\n  2.2.3\n  2.3.7\n  2.4\n  2.4.1\n  2.4.2\n  2.4.3\n  2.4.4\n  2.4.5\n  2.4.6\n  2.5\n  2.5.1\n  2.5.2\n  2.5.3\n  2.5.4\n  2.5.5\n  2.5.6\n  2.6.6\n  2.6.7\n  2.6.8\n  2.6.9\n  2.7-dev\n  2.7\n  2.7.1\n  2.7.2\n  2.7.3\n  2.7.4\n  2.7.5\n  2.7.6\n  2.7.7\n  2.7.8\n  2.7.9\n  2.7.10\n  2.7.11\n  3.0.1\n  3.1\n  3.1.1\n  3.1.2\n  3.1.3\n  3.1.4\n  3.1.5\n  3.2-dev\n  3.2\n  3.2.1\n  3.2.2\n  3.2.3\n  3.2.4\n  3.2.5\n  3.2.6\n  3.3.0\n  3.3-dev\n  3.3.1\n  3.3.2\n  3.3.3\n  3.3.4\n  3.3.5\n  3.3.6\n  3.4.0\n  3.4-dev\n  3.4.1\n  3.4.2\n  3.4.3\n  3.4.4\n  3.5.0\n  3.5-dev\n  3.5.1\n  3.6-dev\n  anaconda-1.4.0\n  anaconda-1.5.0\n  anaconda-1.5.1\n  anaconda-1.6.0\n  anaconda-1.6.1\n  anaconda-1.7.0\n  anaconda-1.8.0\n  anaconda-1.9.0\n  anaconda-1.9.1\n  anaconda-1.9.2\n  anaconda-2.0.0\n  anaconda-2.0.1\n  anaconda-2.1.0\n  anaconda-2.2.0\n  anaconda-2.3.0\n  anaconda-2.4.0\n  anaconda2-2.4.0\n  anaconda2-2.4.1\n  anaconda2-2.5.0\n  anaconda3-2.0.0\n  anaconda3-2.0.1\n  anaconda3-2.1.0\n  anaconda3-2.2.0\n  anaconda3-2.3.0\n  anaconda3-2.4.0\n  anaconda3-2.4.1\n  anaconda3-2.5.0\n  ironpython-dev\n  ironpython-2.7.4\n  ironpython-2.7.5\n  jython-dev\n  jython-2.5.0\n  jython-2.5-dev\n  jython-2.5.1\n  jython-2.5.2\n  jython-2.5.3\n  jython-2.5.4-rc1\n  jython-2.7.0\n  jython-2.7.1b1\n  jython-2.7.1b2\n  miniconda-latest\n  miniconda-2.2.2\n  miniconda-3.0.0\n  miniconda-3.0.4\n  miniconda-3.0.5\n  miniconda-3.3.0\n  miniconda-3.4.2\n  miniconda-3.7.0\n  miniconda-3.8.3\n  miniconda-3.9.1\n  miniconda-3.10.1\n  miniconda-3.16.0\n  miniconda-3.18.3\n  miniconda2-latest\n  miniconda2-3.18.3\n  miniconda2-3.19.0\n  miniconda3-latest\n  miniconda3-2.2.2\n  miniconda3-3.0.0\n  miniconda3-3.0.4\n  miniconda3-3.0.5\n  miniconda3-3.3.0\n  miniconda3-3.4.2\n  miniconda3-3.7.0\n  miniconda3-3.8.3\n  miniconda3-3.9.1\n  miniconda3-3.10.1\n  miniconda3-3.16.0\n  miniconda3-3.18.3\n  miniconda3-3.19.0\n  pypy-c-jit-latest\n  pypy-c-nojit-latest\n  pypy-dev\n  pypy-stm-2.3\n  pypy-portable-2.3.1\n  pypy-portable-2.4\n  pypy-portable-2.5\n  pypy-portable-2.5.1\n  pypy-stm-2.5.1\n  pypy-portable-2.6\n  pypy-portable-2.6.1\n  pypy-portable-4.0\n  pypy-portable-4.0.1\n  pypy-1.5-src\n  pypy-1.5\n  pypy-1.6\n  pypy-1.7-dev\n  pypy-1.7\n  pypy-1.8-dev\n  pypy-1.8\n  pypy-1.9-dev\n  pypy-1.9\n  pypy-2.0-dev\n  pypy-2.0-src\n  pypy-2.0\n  pypy-2.0.1-src\n  pypy-2.0.1\n  pypy-2.0.2-src\n  pypy-2.0.2\n  pypy-2.1-src\n  pypy-2.1\n  pypy-2.2-src\n  pypy-2.2\n  pypy-2.2.1-src\n  pypy-2.2.1\n  pypy-2.3-src\n  pypy-2.3\n  pypy-2.3.1-src\n  pypy-2.3.1\n  pypy-2.4.0-src\n  pypy-2.4.0\n  pypy-2.4-beta1-src\n  pypy-2.4-beta1\n  pypy-2.5.0-src\n  pypy-2.5.0\n  pypy-2.5.1-src\n  pypy-2.5.1\n  pypy-2.6.0-src\n  pypy-2.6.0\n  pypy-2.6.1-src\n  pypy-2.6.1\n  pypy-4.0.0-src\n  pypy-4.0.0\n  pypy-4.0.1-src\n  pypy-4.0.1\n  pypy3-dev\n  pypy3-portable-2.3.1\n  pypy3-portable-2.4\n  pypy3-2.3.1-src\n  pypy3-2.3.1\n  pypy3-2.4.0-src\n  pypy3-2.4.0\n  stackless-dev\n  stackless-2.7-dev\n  stackless-2.7.2\n  stackless-2.7.3\n  stackless-2.7.4\n  stackless-2.7.5\n  stackless-2.7.6\n  stackless-2.7.7\n  stackless-2.7.8\n  stackless-3.2-dev\n  stackless-3.2.2\n  stackless-3.2.5\n  stackless-3.3-dev\n  stackless-3.3.5\n  stackless-3.4.1\n\n\n\n\n\u5b89\u88dd\u300c3.4.4\u300d\n\n\n$ pyenv install 3.4.4\n\n\n\n\n\u95dc\u9375\u5b57\u67e5\u8a62\n\n\n\n\npyenv\n\n\npyenv(\u6240\u6709\u4e2d\u6587\u7db2\u9801)\n\n\npyenv(\u7e41\u9ad4\u4e2d\u6587\u7db2\u9801)\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\n\u4f7f\u7528 Pyenv \u7ba1\u7406\u591a\u500b Python \u7248\u672c\n\n\nPython\u591a\u7248\u672c\u5171\u5b58\u4e4bpyenv \n\n\n[pre-survey]virtualenv, pythonbrew \u548c pyenv\u6709\u4ec0\u9ebc\u4e0d\u540c, \u8a72\u9078\u54ea\u4e00\u500b?",
+            "title": "\u4f7f\u7528pyenv\u5b89\u88ddpython"
+        },
+        {
+            "location": "/content/start/install-pyenv/#pyenvpython",
+            "text": "\u8981\u4f7f\u7528\u300cMkDocs\u300d\u5fc5\u9808\u8981\u6709\u300cPython\u300d\u7684\u74b0\u5883\uff0c\u672c\u66f8\u64b0\u5beb\u7684\u904e\u7a0b\uff0c\u6e2c\u8a66\u7684\u7cfb\u7d71\u662f\u5728\u300cXubuntu 14.04 64\u4f4d\u5143\u300d\u4e0b\u5beb\u6210\u7684\u3002  \u5167\u5efa\u662f\u6709\u300cPython\u300d\uff0c\u800c\u6211\u6703\u7fd2\u6163\u4f7f\u7528\u300cpyenv\u300d\u4f86\u5b89\u88dd\u4e0d\u540c\u7684\u300cPython\u300d\u4f86\u505a\u4e00\u4e9b\u6e2c\u8a66\uff0c\u6240\u4ee5\u5df2\u7d93\u6709\u300cPython\u300d\u7684\u7cfb\u7d71\uff0c\u5c31\u53ef\u4ee5\u76f4\u63a5\u8df3\u4e0b\u4e00\u9801\u3002",
+            "title": "\u4f7f\u7528\u300cpyenv\u300d\u5b89\u88dd\u300cPython\u300d"
+        },
+        {
+            "location": "/content/start/install-pyenv/#pyenv",
+            "text": "\u53ef\u4ee5\u5230\u300cgithub /  pyenv \u300d\u89c0\u770b\u5b89\u88dd\u8aaa\u660e\u3002  $ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm  clone \u300cpyenv\u300d  $ git clone https://github.com/yyuu/pyenv.git ~/.pyenv  \u8a2d\u5b9a  echo 'export PYENV_ROOT= $HOME/.pyenv '   ~/.bashrc\necho 'export PATH= $PYENV_ROOT/bin:$PATH '   ~/.bashrc\necho 'eval  $(pyenv init -) '   ~/.bashrc",
+            "title": "\u5b89\u88dd\u300cpyenv\u300d"
+        },
+        {
+            "location": "/content/start/install-pyenv/#python",
+            "text": "\u67e5\u8a62\u76ee\u524d\u6709\u54ea\u4e9b\u7248\u672c\u53ef\u4ee5\u5b89\u88dd  $ pyenv install -l  \u986f\u793a  Available versions:\n  2.1.3\n  2.2.3\n  2.3.7\n  2.4\n  2.4.1\n  2.4.2\n  2.4.3\n  2.4.4\n  2.4.5\n  2.4.6\n  2.5\n  2.5.1\n  2.5.2\n  2.5.3\n  2.5.4\n  2.5.5\n  2.5.6\n  2.6.6\n  2.6.7\n  2.6.8\n  2.6.9\n  2.7-dev\n  2.7\n  2.7.1\n  2.7.2\n  2.7.3\n  2.7.4\n  2.7.5\n  2.7.6\n  2.7.7\n  2.7.8\n  2.7.9\n  2.7.10\n  2.7.11\n  3.0.1\n  3.1\n  3.1.1\n  3.1.2\n  3.1.3\n  3.1.4\n  3.1.5\n  3.2-dev\n  3.2\n  3.2.1\n  3.2.2\n  3.2.3\n  3.2.4\n  3.2.5\n  3.2.6\n  3.3.0\n  3.3-dev\n  3.3.1\n  3.3.2\n  3.3.3\n  3.3.4\n  3.3.5\n  3.3.6\n  3.4.0\n  3.4-dev\n  3.4.1\n  3.4.2\n  3.4.3\n  3.4.4\n  3.5.0\n  3.5-dev\n  3.5.1\n  3.6-dev\n  anaconda-1.4.0\n  anaconda-1.5.0\n  anaconda-1.5.1\n  anaconda-1.6.0\n  anaconda-1.6.1\n  anaconda-1.7.0\n  anaconda-1.8.0\n  anaconda-1.9.0\n  anaconda-1.9.1\n  anaconda-1.9.2\n  anaconda-2.0.0\n  anaconda-2.0.1\n  anaconda-2.1.0\n  anaconda-2.2.0\n  anaconda-2.3.0\n  anaconda-2.4.0\n  anaconda2-2.4.0\n  anaconda2-2.4.1\n  anaconda2-2.5.0\n  anaconda3-2.0.0\n  anaconda3-2.0.1\n  anaconda3-2.1.0\n  anaconda3-2.2.0\n  anaconda3-2.3.0\n  anaconda3-2.4.0\n  anaconda3-2.4.1\n  anaconda3-2.5.0\n  ironpython-dev\n  ironpython-2.7.4\n  ironpython-2.7.5\n  jython-dev\n  jython-2.5.0\n  jython-2.5-dev\n  jython-2.5.1\n  jython-2.5.2\n  jython-2.5.3\n  jython-2.5.4-rc1\n  jython-2.7.0\n  jython-2.7.1b1\n  jython-2.7.1b2\n  miniconda-latest\n  miniconda-2.2.2\n  miniconda-3.0.0\n  miniconda-3.0.4\n  miniconda-3.0.5\n  miniconda-3.3.0\n  miniconda-3.4.2\n  miniconda-3.7.0\n  miniconda-3.8.3\n  miniconda-3.9.1\n  miniconda-3.10.1\n  miniconda-3.16.0\n  miniconda-3.18.3\n  miniconda2-latest\n  miniconda2-3.18.3\n  miniconda2-3.19.0\n  miniconda3-latest\n  miniconda3-2.2.2\n  miniconda3-3.0.0\n  miniconda3-3.0.4\n  miniconda3-3.0.5\n  miniconda3-3.3.0\n  miniconda3-3.4.2\n  miniconda3-3.7.0\n  miniconda3-3.8.3\n  miniconda3-3.9.1\n  miniconda3-3.10.1\n  miniconda3-3.16.0\n  miniconda3-3.18.3\n  miniconda3-3.19.0\n  pypy-c-jit-latest\n  pypy-c-nojit-latest\n  pypy-dev\n  pypy-stm-2.3\n  pypy-portable-2.3.1\n  pypy-portable-2.4\n  pypy-portable-2.5\n  pypy-portable-2.5.1\n  pypy-stm-2.5.1\n  pypy-portable-2.6\n  pypy-portable-2.6.1\n  pypy-portable-4.0\n  pypy-portable-4.0.1\n  pypy-1.5-src\n  pypy-1.5\n  pypy-1.6\n  pypy-1.7-dev\n  pypy-1.7\n  pypy-1.8-dev\n  pypy-1.8\n  pypy-1.9-dev\n  pypy-1.9\n  pypy-2.0-dev\n  pypy-2.0-src\n  pypy-2.0\n  pypy-2.0.1-src\n  pypy-2.0.1\n  pypy-2.0.2-src\n  pypy-2.0.2\n  pypy-2.1-src\n  pypy-2.1\n  pypy-2.2-src\n  pypy-2.2\n  pypy-2.2.1-src\n  pypy-2.2.1\n  pypy-2.3-src\n  pypy-2.3\n  pypy-2.3.1-src\n  pypy-2.3.1\n  pypy-2.4.0-src\n  pypy-2.4.0\n  pypy-2.4-beta1-src\n  pypy-2.4-beta1\n  pypy-2.5.0-src\n  pypy-2.5.0\n  pypy-2.5.1-src\n  pypy-2.5.1\n  pypy-2.6.0-src\n  pypy-2.6.0\n  pypy-2.6.1-src\n  pypy-2.6.1\n  pypy-4.0.0-src\n  pypy-4.0.0\n  pypy-4.0.1-src\n  pypy-4.0.1\n  pypy3-dev\n  pypy3-portable-2.3.1\n  pypy3-portable-2.4\n  pypy3-2.3.1-src\n  pypy3-2.3.1\n  pypy3-2.4.0-src\n  pypy3-2.4.0\n  stackless-dev\n  stackless-2.7-dev\n  stackless-2.7.2\n  stackless-2.7.3\n  stackless-2.7.4\n  stackless-2.7.5\n  stackless-2.7.6\n  stackless-2.7.7\n  stackless-2.7.8\n  stackless-3.2-dev\n  stackless-3.2.2\n  stackless-3.2.5\n  stackless-3.3-dev\n  stackless-3.3.5\n  stackless-3.4.1  \u5b89\u88dd\u300c3.4.4\u300d  $ pyenv install 3.4.4",
+            "title": "\u5b89\u88dd\u300cPython\u300d"
+        },
+        {
+            "location": "/content/start/install-pyenv/#_1",
+            "text": "pyenv  pyenv(\u6240\u6709\u4e2d\u6587\u7db2\u9801)  pyenv(\u7e41\u9ad4\u4e2d\u6587\u7db2\u9801)",
+            "title": "\u95dc\u9375\u5b57\u67e5\u8a62"
+        },
+        {
+            "location": "/content/start/install-pyenv/#_2",
+            "text": "\u4f7f\u7528 Pyenv \u7ba1\u7406\u591a\u500b Python \u7248\u672c  Python\u591a\u7248\u672c\u5171\u5b58\u4e4bpyenv   [pre-survey]virtualenv, pythonbrew \u548c pyenv\u6709\u4ec0\u9ebc\u4e0d\u540c, \u8a72\u9078\u54ea\u4e00\u500b?",
+            "title": "\u66f4\u591a\u53c3\u8003"
+        },
+        {
+            "location": "/content/start/install-mkdocs/",
+            "text": "\u4f7f\u7528\u300cpip\u300d\u5b89\u88dd\u300cMkDocs\u300d\n\n\n\u524d\u7f6e\u4f5c\u696d\n\n\n\u82e5\u6c92\u4f7f\u7528\u300cpyenv\u300d\uff0c\u9019\u500b\u6b65\u9a5f\u53ef\u4ee5\u7701\u7565\u3002\n\n\n\u6307\u5b9a\u76ee\u524dShell\u8981\u4f7f\u7528\u7684python\u7248\u672c\u3002\n\n\n$ pyenv shell 3.4.4\n\n\n\n\n\u6307\u5b9a\u76ee\u524d\u8cc7\u6599\u593e\u8981\u4f7f\u7528\u7684python\u7248\u672c\n\n\n$ pyenv local 3.4.4\n\n\n\n\npyenv local\n \u9019\u500b\u6307\u4ee4\uff0c\u5c31\u6703\u76ee\u524d\u7522\u751f\u300c.python-version\u300d\n\n\n$ cat .python-version\n\n\n\n\n\u986f\u793a\n\n\n3.4.4\n\n\n\n\n\u4ee5\u5f8c\u9032\u5165\u9019\u500b\u8cc7\u6599\u593e\u6216\u5b50\u8cc7\u6599\u593e\uff0c\u5c31\u6703\u4f7f\u7528\u300c3.4.4\u300d\uff0c\u4f46\u82e5\u6709\u4f7f\u7528\npyenv shell\n\u6307\u5b9a\uff0c\u5247\u6703\u5148\u63a1\u7528\npyenv shell\n\u7684\u8a2d\u5b9a\u3002\n\n\n\u5b89\u88dd\n\n\n\u5b89\u88dd\u300c\nMkDocs\n\u300d\n\n\n$ pip install mkdocs\n\n\n\n\n\u89c0\u770b\u8aaa\u660e\n\n\n$ mkdocs -h\n\n\n\n\n\u6216\n\n\n$ mkdocs --help\n\n\n\n\n\u986f\u793a\n\n\nUsage: mkdocs [OPTIONS] COMMAND [ARGS]...\n\n  MkDocs - Project documentation with Markdown.\n\nOptions:\n  -V, --version  Show the version and exit.\n  -q, --quiet    Silence warnings\n  -v, --verbose  Enable verbose output\n  -h, --help     Show this message and exit.\n\nCommands:\n  build      Build the MkDocs documentation\n  gh-deploy  Deploy your documentation to GitHub Pages\n  json       Build the MkDocs documentation to JSON files...\n  new        Create a new MkDocs project\n  serve      Run the builtin development server\n\n\n\n\n\u89c0\u770b\u7248\u672c\n\n\n\u57f7\u884c\n\n\n$ mkdocs -V\n\n\n\n\n\u6216\n\n\n$ mkdocs --version\n\n\n\n\n\u986f\u793a\n\n\nmkdocs, version 0.15.3\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nMkDocs / \nInstallation",
+            "title": "\u4f7f\u7528pip\u5b89\u88ddmkdocs"
+        },
+        {
+            "location": "/content/start/install-mkdocs/#pipmkdocs",
+            "text": "",
+            "title": "\u4f7f\u7528\u300cpip\u300d\u5b89\u88dd\u300cMkDocs\u300d"
+        },
+        {
+            "location": "/content/start/install-mkdocs/#_1",
+            "text": "\u82e5\u6c92\u4f7f\u7528\u300cpyenv\u300d\uff0c\u9019\u500b\u6b65\u9a5f\u53ef\u4ee5\u7701\u7565\u3002  \u6307\u5b9a\u76ee\u524dShell\u8981\u4f7f\u7528\u7684python\u7248\u672c\u3002  $ pyenv shell 3.4.4  \u6307\u5b9a\u76ee\u524d\u8cc7\u6599\u593e\u8981\u4f7f\u7528\u7684python\u7248\u672c  $ pyenv local 3.4.4  pyenv local  \u9019\u500b\u6307\u4ee4\uff0c\u5c31\u6703\u76ee\u524d\u7522\u751f\u300c.python-version\u300d  $ cat .python-version  \u986f\u793a  3.4.4  \u4ee5\u5f8c\u9032\u5165\u9019\u500b\u8cc7\u6599\u593e\u6216\u5b50\u8cc7\u6599\u593e\uff0c\u5c31\u6703\u4f7f\u7528\u300c3.4.4\u300d\uff0c\u4f46\u82e5\u6709\u4f7f\u7528 pyenv shell \u6307\u5b9a\uff0c\u5247\u6703\u5148\u63a1\u7528 pyenv shell \u7684\u8a2d\u5b9a\u3002",
+            "title": "\u524d\u7f6e\u4f5c\u696d"
+        },
+        {
+            "location": "/content/start/install-mkdocs/#_2",
+            "text": "\u5b89\u88dd\u300c MkDocs \u300d  $ pip install mkdocs",
+            "title": "\u5b89\u88dd"
+        },
+        {
+            "location": "/content/start/install-mkdocs/#_3",
+            "text": "$ mkdocs -h  \u6216  $ mkdocs --help  \u986f\u793a  Usage: mkdocs [OPTIONS] COMMAND [ARGS]...\n\n  MkDocs - Project documentation with Markdown.\n\nOptions:\n  -V, --version  Show the version and exit.\n  -q, --quiet    Silence warnings\n  -v, --verbose  Enable verbose output\n  -h, --help     Show this message and exit.\n\nCommands:\n  build      Build the MkDocs documentation\n  gh-deploy  Deploy your documentation to GitHub Pages\n  json       Build the MkDocs documentation to JSON files...\n  new        Create a new MkDocs project\n  serve      Run the builtin development server",
+            "title": "\u89c0\u770b\u8aaa\u660e"
+        },
+        {
+            "location": "/content/start/install-mkdocs/#_4",
+            "text": "\u57f7\u884c  $ mkdocs -V  \u6216  $ mkdocs --version  \u986f\u793a  mkdocs, version 0.15.3",
+            "title": "\u89c0\u770b\u7248\u672c"
+        },
+        {
+            "location": "/content/start/install-mkdocs/#_5",
+            "text": "MkDocs /  Installation",
+            "title": "\u66f4\u591a\u53c3\u8003"
+        }
+    ]
+}
