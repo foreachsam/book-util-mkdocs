@@ -2,13 +2,13 @@
     "docs": [
         {
             "location": "/",
-            "text": "Mkdocs \u4f7f\u7528\u7b46\u8a18\n\n\n\u9019\u662f\u4f7f\u7528\u300c\nMkDocs\n\u300d\u7684\u7c21\u55ae\u7d00\u9304\u3002",
+            "text": "MkDocs \u4f7f\u7528\u7b46\u8a18\n\n\n\u9019\u662f\u4f7f\u7528\u300c\nMkDocs\n\u300d\u7684\u7c21\u55ae\u7d00\u9304\u3002",
             "title": "\u9996\u9801"
         },
         {
             "location": "/#mkdocs",
             "text": "\u9019\u662f\u4f7f\u7528\u300c MkDocs \u300d\u7684\u7c21\u55ae\u7d00\u9304\u3002",
-            "title": "Mkdocs \u4f7f\u7528\u7b46\u8a18"
+            "title": "MkDocs \u4f7f\u7528\u7b46\u8a18"
         },
         {
             "location": "/content/start/install-pyenv/",
