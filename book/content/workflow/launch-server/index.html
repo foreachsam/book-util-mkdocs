@@ -9,47 +9,45 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>MkDocs 使用筆記 - MkDocs 使用筆記</title>
+        <title>啟動伺服器 - MkDocs 使用筆記</title>
       
       
-        <meta name="description" content="MkDocs 使用筆記">
       
-      
-        <link rel="canonical" href="http://foreachsam.github.io/book-util-mkdocs/">
+        <link rel="canonical" href="http://foreachsam.github.io/book-util-mkdocs/content/workflow/launch-server/">
       
       
         <meta name="author" content="foreachsam">
       
     
-    <meta property="og:url" content="http://foreachsam.github.io/book-util-mkdocs/">
+    <meta property="og:url" content="http://foreachsam.github.io/book-util-mkdocs/content/workflow/launch-server/">
     <meta property="og:title" content="MkDocs 使用筆記">
-    <meta property="og:image" content="http://foreachsam.github.io/book-util-mkdocs//./">
+    <meta property="og:image" content="http://foreachsam.github.io/book-util-mkdocs/content/workflow/launch-server//../../../">
     <meta name="apple-mobile-web-app-title" content="MkDocs 使用筆記">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
     
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon-e565ddfa3b.ico">
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon-e565ddfa3b.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../../../assets/images/favicon-e565ddfa3b.ico">
     <style>
       @font-face {
       	font-family: 'Icon';
-      	src: url('./assets/fonts/icon.eot?52m981');
-      	src: url('./assets/fonts/icon.eot?#iefix52m981')
+      	src: url('../../../assets/fonts/icon.eot?52m981');
+      	src: url('../../../assets/fonts/icon.eot?#iefix52m981')
                format('embedded-opentype'),
-      		   url('./assets/fonts/icon.woff?52m981')
+      		   url('../../../assets/fonts/icon.woff?52m981')
                format('woff'),
-      		   url('./assets/fonts/icon.ttf?52m981')
+      		   url('../../../assets/fonts/icon.ttf?52m981')
                format('truetype'),
-      		   url('./assets/fonts/icon.svg?52m981#icon')
+      		   url('../../../assets/fonts/icon.svg?52m981#icon')
                format('svg');
       	font-weight: normal;
       	font-style: normal;
       }
     </style>
-    <link rel="stylesheet" href="./assets/stylesheets/application-b64b728552.css">
+    <link rel="stylesheet" href="../../../assets/stylesheets/application-b64b728552.css">
     
-      <link rel="stylesheet" href="./assets/stylesheets/palettes-05ab2406df.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/palettes-05ab2406df.css">
     
     
       
@@ -66,7 +64,7 @@
       </style>
     
     
-    <script src="./assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    <script src="../../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
     
   </head>
   
@@ -93,9 +91,13 @@
         
           <span class="path">
             
+              
+                基本操作 <i class="icon icon-link"></i>
+              
+            
           </span>
         
-        MkDocs 使用筆記
+        啟動伺服器
       </div>
     </div>
     
@@ -146,14 +148,9 @@
           
             
   <li>
-    <a class="current" title="首頁" href=".">
+    <a class="" title="首頁" href="../../..">
       首頁
     </a>
-    
-      
-        
-      
-      
     
   </li>
 
@@ -165,7 +162,7 @@
       
         
   <li>
-    <a class="" title="使用pyenv安裝python" href="content/start/install-pyenv/">
+    <a class="" title="使用pyenv安裝python" href="../../start/install-pyenv/">
       使用pyenv安裝python
     </a>
     
@@ -174,7 +171,7 @@
       
         
   <li>
-    <a class="" title="使用pip安裝mkdocs" href="content/start/install-mkdocs/">
+    <a class="" title="使用pip安裝mkdocs" href="../../start/install-mkdocs/">
       使用pip安裝mkdocs
     </a>
     
@@ -192,7 +189,7 @@
       
         
   <li>
-    <a class="" title="建立專案" href="content/workflow/create-project/">
+    <a class="" title="建立專案" href="../create-project/">
       建立專案
     </a>
     
@@ -201,16 +198,49 @@
       
         
   <li>
-    <a class="" title="啟動伺服器" href="content/workflow/launch-server/">
+    <a class="current" title="啟動伺服器" href="./">
       啟動伺服器
     </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="觀看serve說明" href="#serve">
+                觀看serve說明
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="啟動伺服器" href="#_2">
+                啟動伺服器
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="更改 port" href="#port">
+                更改 port
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="更多參考" href="#_3">
+                更多參考
+              </a>
+            </li>
+          
+        </ul>
+      
     
   </li>
 
       
         
   <li>
-    <a class="" title="產生網頁檔" href="content/workflow/build-site/">
+    <a class="" title="產生網頁檔" href="../build-site/">
       產生網頁檔
     </a>
     
@@ -245,8 +275,84 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="mkdocs">MkDocs 使用筆記</h1>
-<p>這是使用「<a href="http://www.mkdocs.org">MkDocs</a>」的簡單紀錄。</p>
+          <h1 id="_1">啟動伺服器</h1>
+<h2 id="serve">觀看serve說明</h2>
+<p>執行</p>
+<pre class="code"><code>$ mkdocs serve --help</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>Usage: mkdocs serve [OPTIONS]
+
+  Run the builtin development server
+
+Options:
+  -f, --config-file FILENAME      Provide a specific MkDocs config
+  -a, --dev-addr &lt;IP:PORT&gt;        IP address and port to serve documentation
+                                  locally (default: localhost:8000)
+  -s, --strict                    Enable strict mode. This will cause MkDocs
+                                  to abort the build on any warnings.
+  -t, --theme [yeti|amelia|journal|material|slate|flatly|spacelab|readthedocs|mkdocs|simplex|united|cyborg|bootstrap|cosmo|cerulean|readable]
+                                  The theme to use when building your
+                                  documentation.
+  --livereload / --no-livereload  Enable and disable the live reloading in the
+                                  development server.
+  -q, --quiet                     Silence warnings
+  -v, --verbose                   Enable verbose output
+  -h, --help                      Show this message and exit.</code></pre>
+
+
+<h2 id="_2">啟動伺服器</h2>
+<p>執行</p>
+<pre class="code"><code>$ mkdocs serve</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+[I 160305 18:32:17 server:281] Serving on http://127.0.0.1:8000
+[I 160305 18:32:17 handlers:59] Start watching changes
+[I 160305 18:32:17 handlers:61] Start detecting changes</code></pre>
+
+
+<p>觀看網頁</p>
+<p>執行</p>
+<pre class="code"><code>$ lynx http://127.0.0.1:8000</code></pre>
+
+
+<p>或</p>
+<pre class="code"><code>$ firefox http://127.0.0.1:8000</code></pre>
+
+
+<h2 id="port">更改 port</h2>
+<p>執行</p>
+<pre class="code"><code>mkdocs serve -a 0.0.0.0:8080</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code class="language-sh">INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+[I 160305 18:33:40 server:281] Serving on http://0.0.0.0:8080
+[I 160305 18:33:40 handlers:59] Start watching changes
+[I 160305 18:33:40 handlers:61] Start detecting changes</code></pre>
+
+
+<p>觀看網頁</p>
+<p>執行</p>
+<pre class="code"><code>$ lynx http://0.0.0.0:8080</code></pre>
+
+
+<p>或</p>
+<pre class="code"><code>$ firefox http://0.0.0.0:8080</code></pre>
+
+
+<blockquote>
+<p>當 bind 「<strong>0.0.0.0</strong>」 可以從外部連進來。</p>
+</blockquote>
+<h2 id="_3">更多參考</h2>
+<ul>
+<li>MkDocs / <a href="http://www.mkdocs.org/#getting-started">Getting started</a></li>
+</ul>
           <aside class="copyright" role="note">
             
               Copyright (c) foreachsam &ndash;
@@ -265,17 +371,33 @@
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
+        <a href="../create-project/" title="建立專案">
+          <span class="direction">
+            上一頁
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                建立專案
+              </div>
+            </div>
+          </div>
+        </a>
+      
     </div>
     <div class="next">
       
-        <a href="content/start/install-pyenv/" title="使用pyenv安裝python">
+        <a href="../build-site/" title="產生網頁檔">
           <span class="direction">
             下一頁
           </span>
           <div class="page">
             <div class="stretch">
               <div class="title">
-                使用pyenv安裝python
+                產生網頁檔
               </div>
             </div>
             <div class="button button-next" role="button" aria-label="Next">
@@ -300,10 +422,10 @@
       </div>
     </main>
     <script>
-      var base_url = '.';
+      var base_url = '../../..';
       var repo_id  = '';
     </script>
-    <script src="./assets/javascripts/application-a10a824a49.js"></script>
+    <script src="../../../assets/javascripts/application-a10a824a49.js"></script>
     
     
   </body>

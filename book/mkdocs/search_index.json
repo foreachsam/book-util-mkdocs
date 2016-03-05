@@ -74,6 +74,111 @@
             "location": "/content/start/install-mkdocs/#_5",
             "text": "MkDocs /  Installation",
             "title": "\u66f4\u591a\u53c3\u8003"
+        },
+        {
+            "location": "/content/workflow/create-project/",
+            "text": "\u5efa\u7acb\u5c08\u6848\n\n\n\u89c0\u770bnew\u6307\u4ee4\u8aaa\u660e\n\n\n$ mkdocs new --help\n\n\n\n\n\u986f\u793a\n\n\nUsage: mkdocs new [OPTIONS] PROJECT_DIRECTORY\n\n  Create a new MkDocs project\n\nOptions:\n  -q, --quiet    Silence warnings\n  -v, --verbose  Enable verbose output\n  -h, --help     Show this message and exit.\n\n\n\n\n\u5efa\u7acb\u65b0\u5c08\u6848\n\n\n\u57f7\u884c\n\n\n$ mkdocs new note\n\n\n\n\n\u986f\u793a\n\n\nINFO    -  Creating project directory: note\nINFO    -  Writing config file: note/mkdocs.yml\nINFO    -  Writing initial docs: note/docs/index.md\n\n\n\n\n\u89c0\u770b\u5c08\u6848\u8cc7\u6599\u593e\u7d50\u69cb\n\n\n\u57f7\u884c\n\n\n$ tree note\n\n\n\n\n\u986f\u793a\n\n\nnote/\n\u251c\u2500\u2500 docs\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 index.md\n\u2514\u2500\u2500 mkdocs.yml\n\n1 directory, 2 files\n\n\n\n\n\u89c0\u770b\u8a2d\u5b9a\u6a94\u5167\u5bb9\n\n\n$ cat note/mkdocs.yml\n\n\n\n\n\u986f\u793a\n\n\nsite_name: My Docs\n\n\n\n\n\u89c0\u770b\u9996\u9801\u5167\u5bb9\n\n\n$ cat note/docs/index.md\n\n\n\n\n\u986f\u793a\n\n\n# Welcome to MkDocs\n\nFor full documentation visit [mkdocs.org](http://mkdocs.org).\n\n## Commands\n\n* `mkdocs new [dir-name]` - Create a new project.\n* `mkdocs serve` - Start the live-reloading docs server.\n* `mkdocs build` - Build the documentation site.\n* `mkdocs help` - Print this help message.\n\n## Project layout\n\n    mkdocs.yml    # The configuration file.\n    docs/\n        index.md  # The documentation homepage.\n        ...       # Other markdown pages, images and other files.\n\n\n\n\n\u5207\u63db\u5230\u5c08\u6848\u8cc7\u6599\u593e\n\n\n\u57f7\u884c\n\n\n$ cd note\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nMkDocs / \nGetting started",
+            "title": "\u5efa\u7acb\u5c08\u6848"
+        },
+        {
+            "location": "/content/workflow/create-project/#_1",
+            "text": "",
+            "title": "\u5efa\u7acb\u5c08\u6848"
+        },
+        {
+            "location": "/content/workflow/create-project/#new",
+            "text": "$ mkdocs new --help  \u986f\u793a  Usage: mkdocs new [OPTIONS] PROJECT_DIRECTORY\n\n  Create a new MkDocs project\n\nOptions:\n  -q, --quiet    Silence warnings\n  -v, --verbose  Enable verbose output\n  -h, --help     Show this message and exit.",
+            "title": "\u89c0\u770bnew\u6307\u4ee4\u8aaa\u660e"
+        },
+        {
+            "location": "/content/workflow/create-project/#_2",
+            "text": "\u57f7\u884c  $ mkdocs new note  \u986f\u793a  INFO    -  Creating project directory: note\nINFO    -  Writing config file: note/mkdocs.yml\nINFO    -  Writing initial docs: note/docs/index.md",
+            "title": "\u5efa\u7acb\u65b0\u5c08\u6848"
+        },
+        {
+            "location": "/content/workflow/create-project/#_3",
+            "text": "\u57f7\u884c  $ tree note  \u986f\u793a  note/\n\u251c\u2500\u2500 docs\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 index.md\n\u2514\u2500\u2500 mkdocs.yml\n\n1 directory, 2 files",
+            "title": "\u89c0\u770b\u5c08\u6848\u8cc7\u6599\u593e\u7d50\u69cb"
+        },
+        {
+            "location": "/content/workflow/create-project/#_4",
+            "text": "$ cat note/mkdocs.yml  \u986f\u793a  site_name: My Docs",
+            "title": "\u89c0\u770b\u8a2d\u5b9a\u6a94\u5167\u5bb9"
+        },
+        {
+            "location": "/content/workflow/create-project/#_5",
+            "text": "$ cat note/docs/index.md  \u986f\u793a  # Welcome to MkDocs\n\nFor full documentation visit [mkdocs.org](http://mkdocs.org).\n\n## Commands\n\n* `mkdocs new [dir-name]` - Create a new project.\n* `mkdocs serve` - Start the live-reloading docs server.\n* `mkdocs build` - Build the documentation site.\n* `mkdocs help` - Print this help message.\n\n## Project layout\n\n    mkdocs.yml    # The configuration file.\n    docs/\n        index.md  # The documentation homepage.\n        ...       # Other markdown pages, images and other files.",
+            "title": "\u89c0\u770b\u9996\u9801\u5167\u5bb9"
+        },
+        {
+            "location": "/content/workflow/create-project/#_6",
+            "text": "\u57f7\u884c  $ cd note",
+            "title": "\u5207\u63db\u5230\u5c08\u6848\u8cc7\u6599\u593e"
+        },
+        {
+            "location": "/content/workflow/create-project/#_7",
+            "text": "MkDocs /  Getting started",
+            "title": "\u66f4\u591a\u53c3\u8003"
+        },
+        {
+            "location": "/content/workflow/launch-server/",
+            "text": "\u555f\u52d5\u4f3a\u670d\u5668\n\n\n\u89c0\u770bserve\u8aaa\u660e\n\n\n\u57f7\u884c\n\n\n$ mkdocs serve --help\n\n\n\n\n\u986f\u793a\n\n\nUsage: mkdocs serve [OPTIONS]\n\n  Run the builtin development server\n\nOptions:\n  -f, --config-file FILENAME      Provide a specific MkDocs config\n  -a, --dev-addr \nIP:PORT\n        IP address and port to serve documentation\n                                  locally (default: localhost:8000)\n  -s, --strict                    Enable strict mode. This will cause MkDocs\n                                  to abort the build on any warnings.\n  -t, --theme [yeti|amelia|journal|material|slate|flatly|spacelab|readthedocs|mkdocs|simplex|united|cyborg|bootstrap|cosmo|cerulean|readable]\n                                  The theme to use when building your\n                                  documentation.\n  --livereload / --no-livereload  Enable and disable the live reloading in the\n                                  development server.\n  -q, --quiet                     Silence warnings\n  -v, --verbose                   Enable verbose output\n  -h, --help                      Show this message and exit.\n\n\n\n\n\u555f\u52d5\u4f3a\u670d\u5668\n\n\n\u57f7\u884c\n\n\n$ mkdocs serve\n\n\n\n\n\u986f\u793a\n\n\nINFO    -  Building documentation...\nINFO    -  Cleaning site directory\n[I 160305 18:32:17 server:281] Serving on http://127.0.0.1:8000\n[I 160305 18:32:17 handlers:59] Start watching changes\n[I 160305 18:32:17 handlers:61] Start detecting changes\n\n\n\n\n\u89c0\u770b\u7db2\u9801\n\n\n\u57f7\u884c\n\n\n$ lynx http://127.0.0.1:8000\n\n\n\n\n\u6216\n\n\n$ firefox http://127.0.0.1:8000\n\n\n\n\n\u66f4\u6539 port\n\n\n\u57f7\u884c\n\n\nmkdocs serve -a 0.0.0.0:8080\n\n\n\n\n\u986f\u793a\n\n\nINFO    -  Building documentation...\nINFO    -  Cleaning site directory\n[I 160305 18:33:40 server:281] Serving on http://0.0.0.0:8080\n[I 160305 18:33:40 handlers:59] Start watching changes\n[I 160305 18:33:40 handlers:61] Start detecting changes\n\n\n\n\n\u89c0\u770b\u7db2\u9801\n\n\n\u57f7\u884c\n\n\n$ lynx http://0.0.0.0:8080\n\n\n\n\n\u6216\n\n\n$ firefox http://0.0.0.0:8080\n\n\n\n\n\n\n\u7576 bind \u300c\n0.0.0.0\n\u300d \u53ef\u4ee5\u5f9e\u5916\u90e8\u9023\u9032\u4f86\u3002\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nMkDocs / \nGetting started",
+            "title": "\u555f\u52d5\u4f3a\u670d\u5668"
+        },
+        {
+            "location": "/content/workflow/launch-server/#_1",
+            "text": "",
+            "title": "\u555f\u52d5\u4f3a\u670d\u5668"
+        },
+        {
+            "location": "/content/workflow/launch-server/#serve",
+            "text": "\u57f7\u884c  $ mkdocs serve --help  \u986f\u793a  Usage: mkdocs serve [OPTIONS]\n\n  Run the builtin development server\n\nOptions:\n  -f, --config-file FILENAME      Provide a specific MkDocs config\n  -a, --dev-addr  IP:PORT         IP address and port to serve documentation\n                                  locally (default: localhost:8000)\n  -s, --strict                    Enable strict mode. This will cause MkDocs\n                                  to abort the build on any warnings.\n  -t, --theme [yeti|amelia|journal|material|slate|flatly|spacelab|readthedocs|mkdocs|simplex|united|cyborg|bootstrap|cosmo|cerulean|readable]\n                                  The theme to use when building your\n                                  documentation.\n  --livereload / --no-livereload  Enable and disable the live reloading in the\n                                  development server.\n  -q, --quiet                     Silence warnings\n  -v, --verbose                   Enable verbose output\n  -h, --help                      Show this message and exit.",
+            "title": "\u89c0\u770bserve\u8aaa\u660e"
+        },
+        {
+            "location": "/content/workflow/launch-server/#_2",
+            "text": "\u57f7\u884c  $ mkdocs serve  \u986f\u793a  INFO    -  Building documentation...\nINFO    -  Cleaning site directory\n[I 160305 18:32:17 server:281] Serving on http://127.0.0.1:8000\n[I 160305 18:32:17 handlers:59] Start watching changes\n[I 160305 18:32:17 handlers:61] Start detecting changes  \u89c0\u770b\u7db2\u9801  \u57f7\u884c  $ lynx http://127.0.0.1:8000  \u6216  $ firefox http://127.0.0.1:8000",
+            "title": "\u555f\u52d5\u4f3a\u670d\u5668"
+        },
+        {
+            "location": "/content/workflow/launch-server/#port",
+            "text": "\u57f7\u884c  mkdocs serve -a 0.0.0.0:8080  \u986f\u793a  INFO    -  Building documentation...\nINFO    -  Cleaning site directory\n[I 160305 18:33:40 server:281] Serving on http://0.0.0.0:8080\n[I 160305 18:33:40 handlers:59] Start watching changes\n[I 160305 18:33:40 handlers:61] Start detecting changes  \u89c0\u770b\u7db2\u9801  \u57f7\u884c  $ lynx http://0.0.0.0:8080  \u6216  $ firefox http://0.0.0.0:8080   \u7576 bind \u300c 0.0.0.0 \u300d \u53ef\u4ee5\u5f9e\u5916\u90e8\u9023\u9032\u4f86\u3002",
+            "title": "\u66f4\u6539 port"
+        },
+        {
+            "location": "/content/workflow/launch-server/#_3",
+            "text": "MkDocs /  Getting started",
+            "title": "\u66f4\u591a\u53c3\u8003"
+        },
+        {
+            "location": "/content/workflow/build-site/",
+            "text": "\u7522\u751f\u7db2\u9801\u6a94\n\n\n\u89c0\u770bbuild\u6307\u4ee4\u8aaa\u660e\n\n\n$ mkdocs build --help\n\n\n\n\n\u986f\u793a\n\n\nUsage: mkdocs build [OPTIONS]\n\n  Build the MkDocs documentation\n\nOptions:\n  -c, --clean                     Remove old files from the site_dir before\n                                  building\n  -f, --config-file FILENAME      Provide a specific MkDocs config\n  -s, --strict                    Enable strict mode. This will cause MkDocs\n                                  to abort the build on any warnings.\n  -t, --theme [yeti|slate|journal|cyborg|cerulean|amelia|mkdocs|cosmo|spacelab|material|readable|united|flatly|bootstrap|simplex|readthedocs]\n                                  The theme to use when building your\n                                  documentation.\n  -d, --site-dir PATH             The directory to output the result of the\n                                  documentation build.\n  -q, --quiet                     Silence warnings\n  -v, --verbose                   Enable verbose output\n  -h, --help                      Show this message and exit.\n\n\n\n\n\u7522\u751f\u7db2\u9801\u6a94\n\n\n\u57f7\u884c\n\n\n$ mkdocs build\n\n\n\n\n\u986f\u793a\n\n\nINFO    -  Building documentation to directory: /home/user/Project/note/site\n\n\n\n\n\u89c0\u770bsite\u8cc7\u6599\u593e\u7d50\u69cb\n\n\n\u57f7\u884c\n\n\n$ tree site\n\n\n\n\n\u986f\u793a\n\n\nsite/\n\u251c\u2500\u2500 404.html\n\u251c\u2500\u2500 base.html\n\u251c\u2500\u2500 content.html\n\u251c\u2500\u2500 css\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 base.css\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 bootstrap-custom.min.css\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 font-awesome-4.5.0.css\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 highlight.css\n\u251c\u2500\u2500 fonts\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 fontawesome-webfont.eot\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 fontawesome-webfont.svg\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 fontawesome-webfont.ttf\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 fontawesome-webfont.woff\n\u251c\u2500\u2500 img\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 favicon.ico\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 grid.png\n\u251c\u2500\u2500 index.html\n\u251c\u2500\u2500 __init__.py\n\u251c\u2500\u2500 js\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 base.js\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 bootstrap-3.0.3.min.js\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 highlight.pack.js\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 jquery-1.10.2.min.js\n\u251c\u2500\u2500 mkdocs\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 js\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 lunr-0.5.7.min.js\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 mustache.min.js\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 require.js\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 search.js\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 search-results-template.mustache\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2514\u2500\u2500 text.js\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 search_index.json\n\u251c\u2500\u2500 nav.html\n\u251c\u2500\u2500 nav-sub.html\n\u251c\u2500\u2500 __pycache__\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 __init__.cpython-34.pyc\n\u251c\u2500\u2500 sitemap.xml\n\u2514\u2500\u2500 toc.html\n\n7 directories, 31 files\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nMkDocs / \nBuilding the site",
+            "title": "\u7522\u751f\u7db2\u9801\u6a94"
+        },
+        {
+            "location": "/content/workflow/build-site/#_1",
+            "text": "",
+            "title": "\u7522\u751f\u7db2\u9801\u6a94"
+        },
+        {
+            "location": "/content/workflow/build-site/#build",
+            "text": "$ mkdocs build --help  \u986f\u793a  Usage: mkdocs build [OPTIONS]\n\n  Build the MkDocs documentation\n\nOptions:\n  -c, --clean                     Remove old files from the site_dir before\n                                  building\n  -f, --config-file FILENAME      Provide a specific MkDocs config\n  -s, --strict                    Enable strict mode. This will cause MkDocs\n                                  to abort the build on any warnings.\n  -t, --theme [yeti|slate|journal|cyborg|cerulean|amelia|mkdocs|cosmo|spacelab|material|readable|united|flatly|bootstrap|simplex|readthedocs]\n                                  The theme to use when building your\n                                  documentation.\n  -d, --site-dir PATH             The directory to output the result of the\n                                  documentation build.\n  -q, --quiet                     Silence warnings\n  -v, --verbose                   Enable verbose output\n  -h, --help                      Show this message and exit.",
+            "title": "\u89c0\u770bbuild\u6307\u4ee4\u8aaa\u660e"
+        },
+        {
+            "location": "/content/workflow/build-site/#_2",
+            "text": "\u57f7\u884c  $ mkdocs build  \u986f\u793a  INFO    -  Building documentation to directory: /home/user/Project/note/site",
+            "title": "\u7522\u751f\u7db2\u9801\u6a94"
+        },
+        {
+            "location": "/content/workflow/build-site/#site",
+            "text": "\u57f7\u884c  $ tree site  \u986f\u793a  site/\n\u251c\u2500\u2500 404.html\n\u251c\u2500\u2500 base.html\n\u251c\u2500\u2500 content.html\n\u251c\u2500\u2500 css\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 base.css\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 bootstrap-custom.min.css\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 font-awesome-4.5.0.css\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 highlight.css\n\u251c\u2500\u2500 fonts\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 fontawesome-webfont.eot\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 fontawesome-webfont.svg\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 fontawesome-webfont.ttf\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 fontawesome-webfont.woff\n\u251c\u2500\u2500 img\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 favicon.ico\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 grid.png\n\u251c\u2500\u2500 index.html\n\u251c\u2500\u2500 __init__.py\n\u251c\u2500\u2500 js\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 base.js\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 bootstrap-3.0.3.min.js\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 highlight.pack.js\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 jquery-1.10.2.min.js\n\u251c\u2500\u2500 mkdocs\n\u2502\u00a0\u00a0 \u251c\u2500\u2500 js\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 lunr-0.5.7.min.js\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 mustache.min.js\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 require.js\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 search.js\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u251c\u2500\u2500 search-results-template.mustache\n\u2502\u00a0\u00a0 \u2502\u00a0\u00a0 \u2514\u2500\u2500 text.js\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 search_index.json\n\u251c\u2500\u2500 nav.html\n\u251c\u2500\u2500 nav-sub.html\n\u251c\u2500\u2500 __pycache__\n\u2502\u00a0\u00a0 \u2514\u2500\u2500 __init__.cpython-34.pyc\n\u251c\u2500\u2500 sitemap.xml\n\u2514\u2500\u2500 toc.html\n\n7 directories, 31 files",
+            "title": "\u89c0\u770bsite\u8cc7\u6599\u593e\u7d50\u69cb"
+        },
+        {
+            "location": "/content/workflow/build-site/#_3",
+            "text": "MkDocs /  Building the site",
+            "title": "\u66f4\u591a\u53c3\u8003"
         }
     ]
 }
