@@ -9,19 +9,19 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>透過requirements.txt，使用pip安裝mkdocs - MkDocs 使用筆記</title>
+        <title>建立Virtual Environments，安裝mkdocs - MkDocs 使用筆記</title>
       
       
       
-        <link rel="canonical" href="http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs-by-pip-requirements/">
+        <link rel="canonical" href="http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs-with-pyvenv/">
       
       
         <meta name="author" content="foreachsam">
       
     
-    <meta property="og:url" content="http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs-by-pip-requirements/">
+    <meta property="og:url" content="http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs-with-pyvenv/">
     <meta property="og:title" content="MkDocs 使用筆記">
-    <meta property="og:image" content="http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs-by-pip-requirements//../../../">
+    <meta property="og:image" content="http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs-with-pyvenv//../../../">
     <meta name="apple-mobile-web-app-title" content="MkDocs 使用筆記">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -97,7 +97,7 @@
             
           </span>
         
-        透過requirements.txt，使用pip安裝mkdocs
+        建立Virtual Environments，安裝mkdocs
       </div>
     </div>
     
@@ -225,8 +225,17 @@
       
         
   <li>
-    <a class="current" title="透過requirements.txt，使用pip安裝mkdocs" href="./">
+    <a class="" title="透過requirements.txt，使用pip安裝mkdocs" href="../install-mkdocs-by-pip-requirements/">
       透過requirements.txt，使用pip安裝mkdocs
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="current" title="建立Virtual Environments，安裝mkdocs" href="./">
+      建立Virtual Environments，安裝mkdocs
     </a>
     
       
@@ -242,26 +251,50 @@
             </li>
           
             <li class="anchor">
-              <a title="撰寫 requirements file" href="#requirements-file">
-                撰寫 requirements file
+              <a title="建立「Virtual Environments」" href="#virtual-environments">
+                建立「Virtual Environments」
               </a>
             </li>
           
             <li class="anchor">
-              <a title="安裝 mkdocs" href="#mkdocs">
-                安裝 mkdocs
+              <a title="確認目前執行的pip所在位置" href="#pip">
+                確認目前執行的pip所在位置
               </a>
             </li>
           
             <li class="anchor">
-              <a title="觀看 mkdocs 相關的資訊" href="#mkdocs_1">
-                觀看 mkdocs 相關的資訊
+              <a title="進入「Virtual Environments」" href="#virtual-environments_1">
+                進入「Virtual Environments」
               </a>
             </li>
           
             <li class="anchor">
-              <a title="建立「requirements.txt」" href="#requirementstxt">
-                建立「requirements.txt」
+              <a title="確認目前執行的pip所在位置" href="#pip_1">
+                確認目前執行的pip所在位置
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="安裝「mkdocs」" href="#mkdocs">
+                安裝「mkdocs」
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="觀看「mkdocs」安裝到那個路徑" href="#mkdocs_1">
+                觀看「mkdocs」安裝到那個路徑
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="退出「Virtual Environments」" href="#virtual-environments_2">
+                退出「Virtual Environments」
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="確認目前執行的pip所在位置" href="#pip_2">
+                確認目前執行的pip所在位置
               </a>
             </li>
           
@@ -273,15 +306,6 @@
           
         </ul>
       
-    
-  </li>
-
-      
-        
-  <li>
-    <a class="" title="建立Virtual Environments，安裝mkdocs" href="../install-mkdocs-with-pyvenv/">
-      建立Virtual Environments，安裝mkdocs
-    </a>
     
   </li>
 
@@ -314,7 +338,7 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="requirementstxtpipmkdocs">透過「requirements.txt」，使用「pip」安裝「MkDocs」</h1>
+          <h1 id="virtual-environmentsmkdocs">建立「Virtual Environments」，安裝「MkDocs」</h1>
 <h2 id="_1">建立專案資料夾</h2>
 <p>建立專案資料夾</p>
 <pre class="code"><code class="language-sh">$ mkdir note</code></pre>
@@ -324,85 +348,68 @@
 <pre class="code"><code class="language-sh">$ cd note</code></pre>
 
 
-<h2 id="requirements-file">撰寫 requirements file</h2>
-<p>撰寫「requirements-to-freeze.txt」</p>
-<pre class="code"><code class="language-sh">$ echo 'mkdocs' &gt; requirements-to-freeze.txt</code></pre>
+<h2 id="virtual-environments">建立「Virtual Environments」</h2>
+<p>執行 (注意這裡是pyvenv，中間有個v,非剛剛的pyenv)</p>
+<pre class="code"><code class="language-sh">$ pyvenv .env</code></pre>
 
 
-<p>觀看「requirements-to-freeze.txt」內容</p>
-<pre class="code"><code class="language-sh">$ cat requirements-to-freeze.txt</code></pre>
+<p>會產生一個資料夾「.env」</p>
+<h2 id="pip">確認目前執行的pip所在位置</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ pip show pip | grep Location</code></pre>
 
 
 <p>顯示</p>
-<pre class="code"><code>mkdocs</code></pre>
+<pre class="code"><code>Location: /home/user/.pyenv/versions/3.4.4/lib/python3.4/site-packages</code></pre>
 
 
-<h2 id="mkdocs">安裝 mkdocs</h2>
+<h2 id="virtual-environments_1">進入「Virtual Environments」</h2>
 <p>執行</p>
-<pre class="code"><code>$ pip install -r requirements-to-freeze.txt</code></pre>
+<pre class="code"><code class="language-sh">$ source .env/bin/activate</code></pre>
 
 
-<p>就會安裝「mkdocs」和其相依的套件</p>
-<h2 id="mkdocs_1">觀看 mkdocs 相關的資訊</h2>
+<h2 id="pip_1">確認目前執行的pip所在位置</h2>
 <p>執行</p>
-<pre class="code"><code class="language-sh">$ pip show mkdocs</code></pre>
+<pre class="code"><code class="language-sh">$ pip show pip | grep Location</code></pre>
 
 
 <p>顯示</p>
-<pre class="code"><code>---
-Metadata-Version: 2.0
-Name: mkdocs
-Version: 0.15.3
-Summary: Project documentation with Markdown.
-Home-page: http://www.mkdocs.org
-Author: Tom Christie
-Author-email: tom@tomchristie.com
-License: BSD
-Location: /home/user/.pyenv/versions/3.4.4/lib/python3.4/site-packages
-Requires: Markdown, tornado, mkdocs-bootswatch, click, PyYAML, Jinja2, livereload, mkdocs-bootstrap
-You are using pip version 7.1.2, however version 8.0.3 is available.
-You should consider upgrading via the 'pip install --upgrade pip' command.</code></pre>
+<pre class="code"><code>Location: /home/user/Project/note/.env/lib/python3.4/site-packages</code></pre>
 
 
-<h2 id="requirementstxt">建立「requirements.txt」</h2>
+<h2 id="mkdocs">安裝「mkdocs」</h2>
 <p>執行</p>
-<pre class="code"><code class="language-sh">$ pip freeze -r requirements-to-freeze.txt &gt; requirements.txt</code></pre>
+<pre class="code"><code>$ pip install mkdocs</code></pre>
 
 
-<p>會產生一個檔「requirements.txt」</p>
-<p>觀看「requirements.txt」內容</p>
+<h2 id="mkdocs_1">觀看「mkdocs」安裝到那個路徑</h2>
 <p>執行</p>
-<pre class="code"><code class="language-sh">$ cat requirements.txt</code></pre>
+<pre class="code"><code class="language-sh">$ pip show mkdocs | grep Location</code></pre>
 
 
 <p>顯示</p>
-<pre class="code"><code>mkdocs==0.15.3
-## The following requirements were added by pip freeze:
-backports-abc==0.4
-click==6.3
-Jinja2==2.8
-livereload==2.4.1
-Markdown==2.6.5
-MarkupSafe==0.23
-mkdocs-bootstrap==0.1.1
-mkdocs-bootswatch==0.4.0
-PyYAML==3.11
-six==1.10.0
-tornado==4.3</code></pre>
+<pre class="code"><code>Location: /home/user/Project/note/.env/lib/python3.4/site-packages</code></pre>
 
 
-<p>為啥要特別產生「requirements.txt」這個檔？</p>
-<p>因為剛剛「requirements-to-freeze.txt」，只有簡單設定要安裝「mkdocs」，並沒有指定版本。</p>
-<p>透過上面指令產生的「requirements.txt」，則會把剛剛安裝的版本給紀錄上去。</p>
-<p>所以當這個這個專案放到其他的機器，</p>
-<p>就可以透過下面的指令安裝這個專案需要的套件，並且安裝的就是同樣的版本。</p>
-<pre class="code"><code class="language-sh">$ pip install -r requirements.txt</code></pre>
+<h2 id="virtual-environments_2">退出「Virtual Environments」</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ deactivate</code></pre>
+
+
+<h2 id="pip_2">確認目前執行的pip所在位置</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ pip show pip | grep Location</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>Location: /home/user/.pyenv/versions/3.4.4/lib/python3.4/site-packages</code></pre>
 
 
 <h2 id="_2">更多參考</h2>
 <ul>
-<li><a href="http://www.kennethreitz.org/essays/a-better-pip-workflow">A Better Pip Workflow™</a></li>
-<li>Python Packaging User Guide / Installing Packages / <a href="https://packaging.python.org/en/latest/installing/#requirements-files">Requirements files</a></li>
+<li><a href="http://tech.mozilla.com.tw/posts/2155/python-%E9%96%8B%E7%99%BC%E5%A5%BD%E5%B9%AB%E6%89%8B-virtualenv">Python 開發好幫手 – virtualenv</a></li>
+<li>Python Packaging User Guide / Installing Packages / <a href="https://packaging.python.org/en/latest/installing/#creating-virtual-environments">Creating Virtual Environments</a></li>
+<li>Python 3.4.4 documentation / The Python Standard Library / 28. Software Packaging and Distribution / <a href="https://docs.python.org/3.4/library/venv.html">28.3. venv — Creation of virtual environments</a></li>
 </ul>
           <aside class="copyright" role="note">
             
@@ -422,7 +429,7 @@ tornado==4.3</code></pre>
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href="../../workflow/build-site/" title="產生網頁檔">
+        <a href="../install-mkdocs-by-pip-requirements/" title="透過requirements.txt，使用pip安裝mkdocs">
           <span class="direction">
             上一頁
           </span>
@@ -432,7 +439,7 @@ tornado==4.3</code></pre>
             </div>
             <div class="stretch">
               <div class="title">
-                產生網頁檔
+                透過requirements.txt，使用pip安裝mkdocs
               </div>
             </div>
           </div>
@@ -440,22 +447,6 @@ tornado==4.3</code></pre>
       
     </div>
     <div class="next">
-      
-        <a href="../install-mkdocs-with-pyvenv/" title="建立Virtual Environments，安裝mkdocs">
-          <span class="direction">
-            下一頁
-          </span>
-          <div class="page">
-            <div class="stretch">
-              <div class="title">
-                建立Virtual Environments，安裝mkdocs
-              </div>
-            </div>
-            <div class="button button-next" role="button" aria-label="Next">
-              <i class="icon icon-forward"></i>
-            </div>
-          </div>
-        </a>
       
     </div>
   </nav>

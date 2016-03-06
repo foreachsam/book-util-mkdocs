@@ -42,7 +42,7 @@
         },
         {
             "location": "/content/start/install-mkdocs/",
-            "text": "\u4f7f\u7528\u300cpip\u300d\u5b89\u88dd\u300cMkDocs\u300d\n\n\n\u524d\u7f6e\u4f5c\u696d\n\n\n\u82e5\u6c92\u4f7f\u7528\u300cpyenv\u300d\uff0c\u9019\u500b\u6b65\u9a5f\u53ef\u4ee5\u7701\u7565\u3002\n\n\n\u6307\u5b9a\u76ee\u524dShell\u8981\u4f7f\u7528\u7684python\u7248\u672c\u3002\n\n\n$ pyenv shell 3.4.4\n\n\n\n\n\u6307\u5b9a\u76ee\u524d\u8cc7\u6599\u593e\u8981\u4f7f\u7528\u7684python\u7248\u672c\n\n\n$ pyenv local 3.4.4\n\n\n\n\npyenv local\n \u9019\u500b\u6307\u4ee4\uff0c\u5c31\u6703\u76ee\u524d\u7522\u751f\u300c.python-version\u300d\n\n\n$ cat .python-version\n\n\n\n\n\u986f\u793a\n\n\n3.4.4\n\n\n\n\n\u4ee5\u5f8c\u9032\u5165\u9019\u500b\u8cc7\u6599\u593e\u6216\u5b50\u8cc7\u6599\u593e\uff0c\u5c31\u6703\u4f7f\u7528\u300c3.4.4\u300d\uff0c\u4f46\u82e5\u6709\u4f7f\u7528\npyenv shell\n\u6307\u5b9a\uff0c\u5247\u6703\u5148\u63a1\u7528\npyenv shell\n\u7684\u8a2d\u5b9a\u3002\n\n\n\u5b89\u88dd\n\n\n\u5b89\u88dd\u300c\nMkDocs\n\u300d\n\n\n$ pip install mkdocs\n\n\n\n\n\u89c0\u770b\u8aaa\u660e\n\n\n$ mkdocs -h\n\n\n\n\n\u6216\n\n\n$ mkdocs --help\n\n\n\n\n\u986f\u793a\n\n\nUsage: mkdocs [OPTIONS] COMMAND [ARGS]...\n\n  MkDocs - Project documentation with Markdown.\n\nOptions:\n  -V, --version  Show the version and exit.\n  -q, --quiet    Silence warnings\n  -v, --verbose  Enable verbose output\n  -h, --help     Show this message and exit.\n\nCommands:\n  build      Build the MkDocs documentation\n  gh-deploy  Deploy your documentation to GitHub Pages\n  json       Build the MkDocs documentation to JSON files...\n  new        Create a new MkDocs project\n  serve      Run the builtin development server\n\n\n\n\n\u89c0\u770b\u7248\u672c\n\n\n\u57f7\u884c\n\n\n$ mkdocs -V\n\n\n\n\n\u6216\n\n\n$ mkdocs --version\n\n\n\n\n\u986f\u793a\n\n\nmkdocs, version 0.15.3\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nMkDocs / \nInstallation",
+            "text": "\u4f7f\u7528\u300cpip\u300d\u5b89\u88dd\u300cMkDocs\u300d\n\n\n\u524d\u7f6e\u4f5c\u696d\n\n\n\u82e5\u6c92\u4f7f\u7528\u300cpyenv\u300d\uff0c\u9019\u500b\u6b65\u9a5f\u53ef\u4ee5\u7701\u7565\u3002\n\n\n\u6307\u5b9a\u76ee\u524dShell\u8981\u4f7f\u7528\u7684python\u7248\u672c\u3002\n\n\n$ pyenv shell 3.4.4\n\n\n\n\n\u6307\u5b9a\u76ee\u524d\u8cc7\u6599\u593e\u8981\u4f7f\u7528\u7684python\u7248\u672c\n\n\n$ pyenv local 3.4.4\n\n\n\n\npyenv local\n \u9019\u500b\u6307\u4ee4\uff0c\u5c31\u6703\u76ee\u524d\u7522\u751f\u300c.python-version\u300d\n\n\n$ cat .python-version\n\n\n\n\n\u986f\u793a\n\n\n3.4.4\n\n\n\n\n\u4ee5\u5f8c\u9032\u5165\u9019\u500b\u8cc7\u6599\u593e\u6216\u5b50\u8cc7\u6599\u593e\uff0c\u5c31\u6703\u4f7f\u7528\u300c3.4.4\u300d\uff0c\u4f46\u82e5\u6709\u4f7f\u7528\npyenv shell\n\u6307\u5b9a\uff0c\u5247\u6703\u5148\u63a1\u7528\npyenv shell\n\u7684\u8a2d\u5b9a\u3002\n\n\n\u5b89\u88dd\n\n\n\u5b89\u88dd\u300c\nMkDocs\n\u300d\n\n\n$ pip install mkdocs\n\n\n\n\n\u89c0\u770b\u8aaa\u660e\n\n\n$ mkdocs -h\n\n\n\n\n\u6216\n\n\n$ mkdocs --help\n\n\n\n\n\u986f\u793a\n\n\nUsage: mkdocs [OPTIONS] COMMAND [ARGS]...\n\n  MkDocs - Project documentation with Markdown.\n\nOptions:\n  -V, --version  Show the version and exit.\n  -q, --quiet    Silence warnings\n  -v, --verbose  Enable verbose output\n  -h, --help     Show this message and exit.\n\nCommands:\n  build      Build the MkDocs documentation\n  gh-deploy  Deploy your documentation to GitHub Pages\n  json       Build the MkDocs documentation to JSON files...\n  new        Create a new MkDocs project\n  serve      Run the builtin development server\n\n\n\n\n\u89c0\u770b\u7248\u672c\n\n\n\u57f7\u884c\n\n\n$ mkdocs -V\n\n\n\n\n\u6216\n\n\n$ mkdocs --version\n\n\n\n\n\u986f\u793a\n\n\nmkdocs, version 0.15.3\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nMkDocs / \nInstallation\n\n\nPython Packaging User Guide / Installing Packages / \nUse pip for Installing",
             "title": "\u4f7f\u7528pip\u5b89\u88ddmkdocs"
         },
         {
@@ -72,7 +72,7 @@
         },
         {
             "location": "/content/start/install-mkdocs/#_5",
-            "text": "MkDocs /  Installation",
+            "text": "MkDocs /  Installation  Python Packaging User Guide / Installing Packages /  Use pip for Installing",
             "title": "\u66f4\u591a\u53c3\u8003"
         },
         {
@@ -182,7 +182,7 @@
         },
         {
             "location": "/content/start/install-mkdocs-by-pip-requirements/",
-            "text": "\u900f\u904e\u300crequirements.txt\u300d\uff0c\u4f7f\u7528\u300cpip\u300d\u5b89\u88dd\u300cMkDocs\u300d\n\n\n\u64b0\u5beb requirements\n\n\n\u64b0\u5beb\u300crequirements-to-freeze.txt\u300d\n\n\n$ echo 'mkdocs' \n requirements-to-freeze.txt\n\n\n\n\n\u89c0\u770b\u300crequirements-to-freeze.txt\u300d\u5167\u5bb9\n\n\n$ cat requirements-to-freeze.txt\n\n\n\n\n\u986f\u793a\n\n\nmkdocs\n\n\n\n\n\u5b89\u88dd mkdocs\n\n\n\u57f7\u884c\n\n\n$ pip install -r requirements-to-freeze.txt\n\n\n\n\n\u5c31\u6703\u5b89\u88dd\u300cmkdocs\u300d\u548c\u5176\u76f8\u4f9d\u7684\u5957\u4ef6\n\n\n\u89c0\u770b mkdocs \u76f8\u95dc\u7684\u8cc7\u8a0a\n\n\n\u57f7\u884c\n\n\n$ pip show mkdocs\n\n\n\n\n\u986f\u793a\n\n\n---\nMetadata-Version: 2.0\nName: mkdocs\nVersion: 0.15.3\nSummary: Project documentation with Markdown.\nHome-page: http://www.mkdocs.org\nAuthor: Tom Christie\nAuthor-email: tom@tomchristie.com\nLicense: BSD\nLocation: /home/user/.pyenv/versions/3.4.4/lib/python3.4/site-packages\nRequires: Markdown, tornado, mkdocs-bootswatch, click, PyYAML, Jinja2, livereload, mkdocs-bootstrap\nYou are using pip version 7.1.2, however version 8.0.3 is available.\nYou should consider upgrading via the 'pip install --upgrade pip' command.\n\n\n\n\n\u5efa\u7acb\u300crequirements.txt\u300d\n\n\n\u57f7\u884c\n\n\n$ pip freeze -r requirements-to-freeze.txt \n requirements.txt\n\n\n\n\n\u6703\u7522\u751f\u4e00\u500b\u6a94\u300crequirements.txt\u300d\n\n\n\u89c0\u770b\u300crequirements.txt\u300d\u5167\u5bb9\n\n\n\u57f7\u884c\n\n\n$ cat requirements.txt\n\n\n\n\n\u986f\u793a\n\n\nmkdocs==0.15.3\n## The following requirements were added by pip freeze:\nbackports-abc==0.4\nclick==6.3\nJinja2==2.8\nlivereload==2.4.1\nMarkdown==2.6.5\nMarkupSafe==0.23\nmkdocs-bootstrap==0.1.1\nmkdocs-bootswatch==0.4.0\nPyYAML==3.11\nsix==1.10.0\ntornado==4.3\n\n\n\n\n\u70ba\u5565\u8981\u7279\u5225\u7522\u751f\u300crequirements.txt\u300d\u9019\u500b\u6a94\uff1f\n\n\n\u56e0\u70ba\u525b\u525b\u300crequirements-to-freeze.txt\u300d\uff0c\u53ea\u6709\u7c21\u55ae\u8a2d\u5b9a\u8981\u5b89\u88dd\u300cmkdocs\u300d\uff0c\u4e26\u6c92\u6709\u6307\u5b9a\u7248\u672c\u3002\n\n\n\u900f\u904e\u4e0a\u9762\u6307\u4ee4\u7522\u751f\u7684\u300crequirements.txt\u300d\uff0c\u5247\u6703\u628a\u525b\u525b\u5b89\u88dd\u7684\u7248\u672c\u7d66\u7d00\u9304\u4e0a\u53bb\u3002\n\n\n\u6240\u4ee5\u7576\u9019\u500b\u9019\u500b\u5c08\u6848\u653e\u5230\u5176\u4ed6\u7684\u6a5f\u5668\uff0c\n\n\n\u5c31\u53ef\u4ee5\u900f\u904e\u4e0b\u9762\u7684\u6307\u4ee4\u5b89\u88dd\u9019\u500b\u5c08\u6848\u9700\u8981\u7684\u5957\u4ef6\uff0c\u4e26\u4e14\u5b89\u88dd\u7684\u5c31\u662f\u540c\u6a23\u7684\u7248\u672c\u3002\n\n\n$ pip install -r requirements.txt\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nA Better Pip Workflow\u2122",
+            "text": "\u900f\u904e\u300crequirements.txt\u300d\uff0c\u4f7f\u7528\u300cpip\u300d\u5b89\u88dd\u300cMkDocs\u300d\n\n\n\u5efa\u7acb\u5c08\u6848\u8cc7\u6599\u593e\n\n\n\u5efa\u7acb\u5c08\u6848\u8cc7\u6599\u593e\n\n\n$ mkdir note\n\n\n\n\n\u5207\u63db\u5230\u5c08\u6848\u8cc7\u6599\u593e\n\n\n$ cd note\n\n\n\n\n\u64b0\u5beb requirements file\n\n\n\u64b0\u5beb\u300crequirements-to-freeze.txt\u300d\n\n\n$ echo 'mkdocs' \n requirements-to-freeze.txt\n\n\n\n\n\u89c0\u770b\u300crequirements-to-freeze.txt\u300d\u5167\u5bb9\n\n\n$ cat requirements-to-freeze.txt\n\n\n\n\n\u986f\u793a\n\n\nmkdocs\n\n\n\n\n\u5b89\u88dd mkdocs\n\n\n\u57f7\u884c\n\n\n$ pip install -r requirements-to-freeze.txt\n\n\n\n\n\u5c31\u6703\u5b89\u88dd\u300cmkdocs\u300d\u548c\u5176\u76f8\u4f9d\u7684\u5957\u4ef6\n\n\n\u89c0\u770b mkdocs \u76f8\u95dc\u7684\u8cc7\u8a0a\n\n\n\u57f7\u884c\n\n\n$ pip show mkdocs\n\n\n\n\n\u986f\u793a\n\n\n---\nMetadata-Version: 2.0\nName: mkdocs\nVersion: 0.15.3\nSummary: Project documentation with Markdown.\nHome-page: http://www.mkdocs.org\nAuthor: Tom Christie\nAuthor-email: tom@tomchristie.com\nLicense: BSD\nLocation: /home/user/.pyenv/versions/3.4.4/lib/python3.4/site-packages\nRequires: Markdown, tornado, mkdocs-bootswatch, click, PyYAML, Jinja2, livereload, mkdocs-bootstrap\nYou are using pip version 7.1.2, however version 8.0.3 is available.\nYou should consider upgrading via the 'pip install --upgrade pip' command.\n\n\n\n\n\u5efa\u7acb\u300crequirements.txt\u300d\n\n\n\u57f7\u884c\n\n\n$ pip freeze -r requirements-to-freeze.txt \n requirements.txt\n\n\n\n\n\u6703\u7522\u751f\u4e00\u500b\u6a94\u300crequirements.txt\u300d\n\n\n\u89c0\u770b\u300crequirements.txt\u300d\u5167\u5bb9\n\n\n\u57f7\u884c\n\n\n$ cat requirements.txt\n\n\n\n\n\u986f\u793a\n\n\nmkdocs==0.15.3\n## The following requirements were added by pip freeze:\nbackports-abc==0.4\nclick==6.3\nJinja2==2.8\nlivereload==2.4.1\nMarkdown==2.6.5\nMarkupSafe==0.23\nmkdocs-bootstrap==0.1.1\nmkdocs-bootswatch==0.4.0\nPyYAML==3.11\nsix==1.10.0\ntornado==4.3\n\n\n\n\n\u70ba\u5565\u8981\u7279\u5225\u7522\u751f\u300crequirements.txt\u300d\u9019\u500b\u6a94\uff1f\n\n\n\u56e0\u70ba\u525b\u525b\u300crequirements-to-freeze.txt\u300d\uff0c\u53ea\u6709\u7c21\u55ae\u8a2d\u5b9a\u8981\u5b89\u88dd\u300cmkdocs\u300d\uff0c\u4e26\u6c92\u6709\u6307\u5b9a\u7248\u672c\u3002\n\n\n\u900f\u904e\u4e0a\u9762\u6307\u4ee4\u7522\u751f\u7684\u300crequirements.txt\u300d\uff0c\u5247\u6703\u628a\u525b\u525b\u5b89\u88dd\u7684\u7248\u672c\u7d66\u7d00\u9304\u4e0a\u53bb\u3002\n\n\n\u6240\u4ee5\u7576\u9019\u500b\u9019\u500b\u5c08\u6848\u653e\u5230\u5176\u4ed6\u7684\u6a5f\u5668\uff0c\n\n\n\u5c31\u53ef\u4ee5\u900f\u904e\u4e0b\u9762\u7684\u6307\u4ee4\u5b89\u88dd\u9019\u500b\u5c08\u6848\u9700\u8981\u7684\u5957\u4ef6\uff0c\u4e26\u4e14\u5b89\u88dd\u7684\u5c31\u662f\u540c\u6a23\u7684\u7248\u672c\u3002\n\n\n$ pip install -r requirements.txt\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nA Better Pip Workflow\u2122\n\n\nPython Packaging User Guide / Installing Packages / \nRequirements files",
             "title": "\u900f\u904erequirements.txt\uff0c\u4f7f\u7528pip\u5b89\u88ddmkdocs"
         },
         {
@@ -191,9 +191,14 @@
             "title": "\u900f\u904e\u300crequirements.txt\u300d\uff0c\u4f7f\u7528\u300cpip\u300d\u5b89\u88dd\u300cMkDocs\u300d"
         },
         {
-            "location": "/content/start/install-mkdocs-by-pip-requirements/#requirements",
+            "location": "/content/start/install-mkdocs-by-pip-requirements/#_1",
+            "text": "\u5efa\u7acb\u5c08\u6848\u8cc7\u6599\u593e  $ mkdir note  \u5207\u63db\u5230\u5c08\u6848\u8cc7\u6599\u593e  $ cd note",
+            "title": "\u5efa\u7acb\u5c08\u6848\u8cc7\u6599\u593e"
+        },
+        {
+            "location": "/content/start/install-mkdocs-by-pip-requirements/#requirements-file",
             "text": "\u64b0\u5beb\u300crequirements-to-freeze.txt\u300d  $ echo 'mkdocs'   requirements-to-freeze.txt  \u89c0\u770b\u300crequirements-to-freeze.txt\u300d\u5167\u5bb9  $ cat requirements-to-freeze.txt  \u986f\u793a  mkdocs",
-            "title": "\u64b0\u5beb requirements"
+            "title": "\u64b0\u5beb requirements file"
         },
         {
             "location": "/content/start/install-mkdocs-by-pip-requirements/#mkdocs",
@@ -211,8 +216,68 @@
             "title": "\u5efa\u7acb\u300crequirements.txt\u300d"
         },
         {
-            "location": "/content/start/install-mkdocs-by-pip-requirements/#_1",
-            "text": "A Better Pip Workflow\u2122",
+            "location": "/content/start/install-mkdocs-by-pip-requirements/#_2",
+            "text": "A Better Pip Workflow\u2122  Python Packaging User Guide / Installing Packages /  Requirements files",
+            "title": "\u66f4\u591a\u53c3\u8003"
+        },
+        {
+            "location": "/content/start/install-mkdocs-with-pyvenv/",
+            "text": "\u5efa\u7acb\u300cVirtual Environments\u300d\uff0c\u5b89\u88dd\u300cMkDocs\u300d\n\n\n\u5efa\u7acb\u5c08\u6848\u8cc7\u6599\u593e\n\n\n\u5efa\u7acb\u5c08\u6848\u8cc7\u6599\u593e\n\n\n$ mkdir note\n\n\n\n\n\u5207\u63db\u5230\u5c08\u6848\u8cc7\u6599\u593e\n\n\n$ cd note\n\n\n\n\n\u5efa\u7acb\u300cVirtual Environments\u300d\n\n\n\u57f7\u884c (\u6ce8\u610f\u9019\u88e1\u662fpyvenv\uff0c\u4e2d\u9593\u6709\u500bv,\u975e\u525b\u525b\u7684pyenv)\n\n\n$ pyvenv .env\n\n\n\n\n\u6703\u7522\u751f\u4e00\u500b\u8cc7\u6599\u593e\u300c.env\u300d\n\n\n\u78ba\u8a8d\u76ee\u524d\u57f7\u884c\u7684pip\u6240\u5728\u4f4d\u7f6e\n\n\n\u57f7\u884c\n\n\n$ pip show pip | grep Location\n\n\n\n\n\u986f\u793a\n\n\nLocation: /home/user/.pyenv/versions/3.4.4/lib/python3.4/site-packages\n\n\n\n\n\u9032\u5165\u300cVirtual Environments\u300d\n\n\n\u57f7\u884c\n\n\n$ source .env/bin/activate\n\n\n\n\n\u78ba\u8a8d\u76ee\u524d\u57f7\u884c\u7684pip\u6240\u5728\u4f4d\u7f6e\n\n\n\u57f7\u884c\n\n\n$ pip show pip | grep Location\n\n\n\n\n\u986f\u793a\n\n\nLocation: /home/user/Project/note/.env/lib/python3.4/site-packages\n\n\n\n\n\u5b89\u88dd\u300cmkdocs\u300d\n\n\n\u57f7\u884c\n\n\n$ pip install mkdocs\n\n\n\n\n\u89c0\u770b\u300cmkdocs\u300d\u5b89\u88dd\u5230\u90a3\u500b\u8def\u5f91\n\n\n\u57f7\u884c\n\n\n$ pip show mkdocs | grep Location\n\n\n\n\n\u986f\u793a\n\n\nLocation: /home/user/Project/note/.env/lib/python3.4/site-packages\n\n\n\n\n\u9000\u51fa\u300cVirtual Environments\u300d\n\n\n\u57f7\u884c\n\n\n$ deactivate\n\n\n\n\n\u78ba\u8a8d\u76ee\u524d\u57f7\u884c\u7684pip\u6240\u5728\u4f4d\u7f6e\n\n\n\u57f7\u884c\n\n\n$ pip show pip | grep Location\n\n\n\n\n\u986f\u793a\n\n\nLocation: /home/user/.pyenv/versions/3.4.4/lib/python3.4/site-packages\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nPython \u958b\u767c\u597d\u5e6b\u624b \u2013 virtualenv\n\n\nPython Packaging User Guide / Installing Packages / \nCreating Virtual Environments\n\n\nPython 3.4.4 documentation / The Python Standard Library / 28. Software Packaging and Distribution / \n28.3. venv \u2014 Creation of virtual environments",
+            "title": "\u5efa\u7acbVirtual Environments\uff0c\u5b89\u88ddmkdocs"
+        },
+        {
+            "location": "/content/start/install-mkdocs-with-pyvenv/#virtual-environmentsmkdocs",
+            "text": "",
+            "title": "\u5efa\u7acb\u300cVirtual Environments\u300d\uff0c\u5b89\u88dd\u300cMkDocs\u300d"
+        },
+        {
+            "location": "/content/start/install-mkdocs-with-pyvenv/#_1",
+            "text": "\u5efa\u7acb\u5c08\u6848\u8cc7\u6599\u593e  $ mkdir note  \u5207\u63db\u5230\u5c08\u6848\u8cc7\u6599\u593e  $ cd note",
+            "title": "\u5efa\u7acb\u5c08\u6848\u8cc7\u6599\u593e"
+        },
+        {
+            "location": "/content/start/install-mkdocs-with-pyvenv/#virtual-environments",
+            "text": "\u57f7\u884c (\u6ce8\u610f\u9019\u88e1\u662fpyvenv\uff0c\u4e2d\u9593\u6709\u500bv,\u975e\u525b\u525b\u7684pyenv)  $ pyvenv .env  \u6703\u7522\u751f\u4e00\u500b\u8cc7\u6599\u593e\u300c.env\u300d",
+            "title": "\u5efa\u7acb\u300cVirtual Environments\u300d"
+        },
+        {
+            "location": "/content/start/install-mkdocs-with-pyvenv/#pip",
+            "text": "\u57f7\u884c  $ pip show pip | grep Location  \u986f\u793a  Location: /home/user/.pyenv/versions/3.4.4/lib/python3.4/site-packages",
+            "title": "\u78ba\u8a8d\u76ee\u524d\u57f7\u884c\u7684pip\u6240\u5728\u4f4d\u7f6e"
+        },
+        {
+            "location": "/content/start/install-mkdocs-with-pyvenv/#virtual-environments_1",
+            "text": "\u57f7\u884c  $ source .env/bin/activate",
+            "title": "\u9032\u5165\u300cVirtual Environments\u300d"
+        },
+        {
+            "location": "/content/start/install-mkdocs-with-pyvenv/#pip_1",
+            "text": "\u57f7\u884c  $ pip show pip | grep Location  \u986f\u793a  Location: /home/user/Project/note/.env/lib/python3.4/site-packages",
+            "title": "\u78ba\u8a8d\u76ee\u524d\u57f7\u884c\u7684pip\u6240\u5728\u4f4d\u7f6e"
+        },
+        {
+            "location": "/content/start/install-mkdocs-with-pyvenv/#mkdocs",
+            "text": "\u57f7\u884c  $ pip install mkdocs",
+            "title": "\u5b89\u88dd\u300cmkdocs\u300d"
+        },
+        {
+            "location": "/content/start/install-mkdocs-with-pyvenv/#mkdocs_1",
+            "text": "\u57f7\u884c  $ pip show mkdocs | grep Location  \u986f\u793a  Location: /home/user/Project/note/.env/lib/python3.4/site-packages",
+            "title": "\u89c0\u770b\u300cmkdocs\u300d\u5b89\u88dd\u5230\u90a3\u500b\u8def\u5f91"
+        },
+        {
+            "location": "/content/start/install-mkdocs-with-pyvenv/#virtual-environments_2",
+            "text": "\u57f7\u884c  $ deactivate",
+            "title": "\u9000\u51fa\u300cVirtual Environments\u300d"
+        },
+        {
+            "location": "/content/start/install-mkdocs-with-pyvenv/#pip_2",
+            "text": "\u57f7\u884c  $ pip show pip | grep Location  \u986f\u793a  Location: /home/user/.pyenv/versions/3.4.4/lib/python3.4/site-packages",
+            "title": "\u78ba\u8a8d\u76ee\u524d\u57f7\u884c\u7684pip\u6240\u5728\u4f4d\u7f6e"
+        },
+        {
+            "location": "/content/start/install-mkdocs-with-pyvenv/#_2",
+            "text": "Python \u958b\u767c\u597d\u5e6b\u624b \u2013 virtualenv  Python Packaging User Guide / Installing Packages /  Creating Virtual Environments  Python 3.4.4 documentation / The Python Standard Library / 28. Software Packaging and Distribution /  28.3. venv \u2014 Creation of virtual environments",
             "title": "\u66f4\u591a\u53c3\u8003"
         }
     ]
