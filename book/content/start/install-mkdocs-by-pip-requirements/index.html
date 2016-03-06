@@ -9,19 +9,19 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>使用pip安裝mkdocs - MkDocs 使用筆記</title>
+        <title>透過requirements.txt，使用pip安裝mkdocs - MkDocs 使用筆記</title>
       
       
       
-        <link rel="canonical" href="http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs/">
+        <link rel="canonical" href="http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs-by-pip-requirements/">
       
       
         <meta name="author" content="foreachsam">
       
     
-    <meta property="og:url" content="http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs/">
+    <meta property="og:url" content="http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs-by-pip-requirements/">
     <meta property="og:title" content="MkDocs 使用筆記">
-    <meta property="og:image" content="http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs//../../../">
+    <meta property="og:image" content="http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs-by-pip-requirements//../../../">
     <meta name="apple-mobile-web-app-title" content="MkDocs 使用筆記">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -92,12 +92,12 @@
           <span class="path">
             
               
-                準備工作 <i class="icon icon-link"></i>
+                額外一提 <i class="icon icon-link"></i>
               
             
           </span>
         
-        使用pip安裝mkdocs
+        透過requirements.txt，使用pip安裝mkdocs
       </div>
     </div>
     
@@ -171,48 +171,9 @@
       
         
   <li>
-    <a class="current" title="使用pip安裝mkdocs" href="./">
+    <a class="" title="使用pip安裝mkdocs" href="../install-mkdocs/">
       使用pip安裝mkdocs
     </a>
-    
-      
-        
-      
-      
-        <ul>
-          
-            <li class="anchor">
-              <a title="前置作業" href="#_1">
-                前置作業
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="安裝" href="#_2">
-                安裝
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="觀看說明" href="#_3">
-                觀看說明
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="觀看版本" href="#_4">
-                觀看版本
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="更多參考" href="#_5">
-                更多參考
-              </a>
-            </li>
-          
-        </ul>
-      
     
   </li>
 
@@ -264,9 +225,48 @@
       
         
   <li>
-    <a class="" title="透過requirements.txt，使用pip安裝mkdocs" href="../install-mkdocs-by-pip-requirements/">
+    <a class="current" title="透過requirements.txt，使用pip安裝mkdocs" href="./">
       透過requirements.txt，使用pip安裝mkdocs
     </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="撰寫 requirements" href="#requirements">
+                撰寫 requirements
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="安裝 mkdocs" href="#mkdocs">
+                安裝 mkdocs
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="觀看 mkdocs 相關的資訊" href="#mkdocs_1">
+                觀看 mkdocs 相關的資訊
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="建立「requirements.txt」" href="#requirementstxt">
+                建立「requirements.txt」
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="更多參考" href="#_1">
+                更多參考
+              </a>
+            </li>
+          
+        </ul>
+      
     
   </li>
 
@@ -299,74 +299,85 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="pipmkdocs">使用「pip」安裝「MkDocs」</h1>
-<h2 id="_1">前置作業</h2>
-<p>若沒使用「pyenv」，這個步驟可以省略。</p>
-<p>指定目前Shell要使用的python版本。</p>
-<pre class="code"><code class="language-sh">$ pyenv shell 3.4.4</code></pre>
+          <h1 id="requirementstxtpipmkdocs">透過「requirements.txt」，使用「pip」安裝「MkDocs」</h1>
+<h2 id="requirements">撰寫 requirements</h2>
+<p>撰寫「requirements-to-freeze.txt」</p>
+<pre class="code"><code class="language-sh">$ echo 'mkdocs' &gt; requirements-to-freeze.txt</code></pre>
 
 
-<p>指定目前資料夾要使用的python版本</p>
-<pre class="code"><code class="language-sh">$ pyenv local 3.4.4</code></pre>
-
-
-<p><code>pyenv local</code> 這個指令，就會目前產生「.python-version」</p>
-<pre class="code"><code>$ cat .python-version</code></pre>
+<p>觀看「requirements-to-freeze.txt」內容</p>
+<pre class="code"><code class="language-sh">$ cat requirements-to-freeze.txt</code></pre>
 
 
 <p>顯示</p>
-<pre class="code"><code>3.4.4</code></pre>
+<pre class="code"><code>mkdocs</code></pre>
 
 
-<p>以後進入這個資料夾或子資料夾，就會使用「3.4.4」，但若有使用<code>pyenv shell</code>指定，則會先採用<code>pyenv shell</code>的設定。</p>
-<h2 id="_2">安裝</h2>
-<p>安裝「<a href="https://pypi.python.org/pypi/mkdocs">MkDocs</a>」</p>
-<pre class="code"><code class="language-sh">$ pip install mkdocs</code></pre>
-
-
-<h2 id="_3">觀看說明</h2>
-<pre class="code"><code class="language-sh">$ mkdocs -h</code></pre>
-
-
-<p>或</p>
-<pre class="code"><code class="language-sh">$ mkdocs --help</code></pre>
-
-
-<p>顯示</p>
-<pre class="code"><code class="language-sh">Usage: mkdocs [OPTIONS] COMMAND [ARGS]...
-
-  MkDocs - Project documentation with Markdown.
-
-Options:
-  -V, --version  Show the version and exit.
-  -q, --quiet    Silence warnings
-  -v, --verbose  Enable verbose output
-  -h, --help     Show this message and exit.
-
-Commands:
-  build      Build the MkDocs documentation
-  gh-deploy  Deploy your documentation to GitHub Pages
-  json       Build the MkDocs documentation to JSON files...
-  new        Create a new MkDocs project
-  serve      Run the builtin development server</code></pre>
-
-
-<h2 id="_4">觀看版本</h2>
+<h2 id="mkdocs">安裝 mkdocs</h2>
 <p>執行</p>
-<pre class="code"><code class="language-sh">$ mkdocs -V</code></pre>
+<pre class="code"><code>$ pip install -r requirements-to-freeze.txt</code></pre>
 
 
-<p>或</p>
-<pre class="code"><code class="language-sh">$ mkdocs --version</code></pre>
+<p>就會安裝「mkdocs」和其相依的套件</p>
+<h2 id="mkdocs_1">觀看 mkdocs 相關的資訊</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ pip show mkdocs</code></pre>
 
 
 <p>顯示</p>
-<pre class="code"><code>mkdocs, version 0.15.3</code></pre>
+<pre class="code"><code>---
+Metadata-Version: 2.0
+Name: mkdocs
+Version: 0.15.3
+Summary: Project documentation with Markdown.
+Home-page: http://www.mkdocs.org
+Author: Tom Christie
+Author-email: tom@tomchristie.com
+License: BSD
+Location: /home/user/.pyenv/versions/3.4.4/lib/python3.4/site-packages
+Requires: Markdown, tornado, mkdocs-bootswatch, click, PyYAML, Jinja2, livereload, mkdocs-bootstrap
+You are using pip version 7.1.2, however version 8.0.3 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.</code></pre>
 
 
-<h2 id="_5">更多參考</h2>
+<h2 id="requirementstxt">建立「requirements.txt」</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ pip freeze -r requirements-to-freeze.txt &gt; requirements.txt</code></pre>
+
+
+<p>會產生一個檔「requirements.txt」</p>
+<p>觀看「requirements.txt」內容</p>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ cat requirements.txt</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>mkdocs==0.15.3
+## The following requirements were added by pip freeze:
+backports-abc==0.4
+click==6.3
+Jinja2==2.8
+livereload==2.4.1
+Markdown==2.6.5
+MarkupSafe==0.23
+mkdocs-bootstrap==0.1.1
+mkdocs-bootswatch==0.4.0
+PyYAML==3.11
+six==1.10.0
+tornado==4.3</code></pre>
+
+
+<p>為啥要特別產生「requirements.txt」這個檔？</p>
+<p>因為剛剛「requirements-to-freeze.txt」，只有簡單設定要安裝「mkdocs」，並沒有指定版本。</p>
+<p>透過上面指令產生的「requirements.txt」，則會把剛剛安裝的版本給紀錄上去。</p>
+<p>所以當這個這個專案放到其他的機器，</p>
+<p>就可以透過下面的指令安裝這個專案需要的套件，並且安裝的就是同樣的版本。</p>
+<pre class="code"><code class="language-sh">$ pip install -r requirements.txt</code></pre>
+
+
+<h2 id="_1">更多參考</h2>
 <ul>
-<li>MkDocs / <a href="http://www.mkdocs.org/#installation">Installation</a></li>
+<li><a href="http://www.kennethreitz.org/essays/a-better-pip-workflow">A Better Pip Workflow™</a></li>
 </ul>
           <aside class="copyright" role="note">
             
@@ -386,7 +397,7 @@ Commands:
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href="../install-pyenv/" title="使用pyenv安裝python">
+        <a href="../../workflow/build-site/" title="產生網頁檔">
           <span class="direction">
             上一頁
           </span>
@@ -396,7 +407,7 @@ Commands:
             </div>
             <div class="stretch">
               <div class="title">
-                使用pyenv安裝python
+                產生網頁檔
               </div>
             </div>
           </div>
@@ -404,22 +415,6 @@ Commands:
       
     </div>
     <div class="next">
-      
-        <a href="../../workflow/create-project/" title="建立專案">
-          <span class="direction">
-            下一頁
-          </span>
-          <div class="page">
-            <div class="stretch">
-              <div class="title">
-                建立專案
-              </div>
-            </div>
-            <div class="button button-next" role="button" aria-label="Next">
-              <i class="icon icon-forward"></i>
-            </div>
-          </div>
-        </a>
       
     </div>
   </nav>
