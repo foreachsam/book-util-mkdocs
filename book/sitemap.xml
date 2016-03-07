@@ -3,7 +3,7 @@
 
     
     <url>
-     <loc>http://foreachsam.github.io/book-util-mkdocs//</loc>
+     <loc>http://foreachsam.github.io/book-util-mkdocs/</loc>
      <lastmod>2016-03-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -12,35 +12,13 @@
     
         
     <url>
-     <loc>http://foreachsam.github.io/book-util-mkdocs//content/start/install-pyenv/</loc>
+     <loc>http://foreachsam.github.io/book-util-mkdocs/content/start/install-pyenv/</loc>
      <lastmod>2016-03-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://foreachsam.github.io/book-util-mkdocs//content/start/install-mkdocs/</loc>
-     <lastmod>2016-03-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>http://foreachsam.github.io/book-util-mkdocs//content/workflow/create-project/</loc>
-     <lastmod>2016-03-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://foreachsam.github.io/book-util-mkdocs//content/workflow/launch-server/</loc>
-     <lastmod>2016-03-07</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>http://foreachsam.github.io/book-util-mkdocs//content/workflow/build-site/</loc>
+     <loc>http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs/</loc>
      <lastmod>2016-03-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -50,13 +28,35 @@
     
         
     <url>
-     <loc>http://foreachsam.github.io/book-util-mkdocs//content/start/install-mkdocs-by-pip-requirements/</loc>
+     <loc>http://foreachsam.github.io/book-util-mkdocs/content/workflow/create-project/</loc>
      <lastmod>2016-03-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>http://foreachsam.github.io/book-util-mkdocs//content/start/install-mkdocs-with-pyvenv/</loc>
+     <loc>http://foreachsam.github.io/book-util-mkdocs/content/workflow/launch-server/</loc>
+     <lastmod>2016-03-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://foreachsam.github.io/book-util-mkdocs/content/workflow/build-site/</loc>
+     <lastmod>2016-03-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs-by-pip-requirements/</loc>
+     <lastmod>2016-03-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>http://foreachsam.github.io/book-util-mkdocs/content/start/install-mkdocs-with-pyvenv/</loc>
      <lastmod>2016-03-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
