@@ -181,6 +181,31 @@
             "title": "\u66f4\u591a\u53c3\u8003"
         },
         {
+            "location": "/content/workflow/configuration/",
+            "text": "\u5982\u4f55\u8a2d\u5b9a\n\n\n\u524d\u9762\u300c\n\u5efa\u7acb\u5c08\u6848\n\u300d\u6642\uff0c\u6709\u770b\u5230\u4e00\u500b\u6a94\u300cmkdocs.yml\u300d\uff0c\n\n\n\u300c\u8a2d\u5b9a\u300d\u5c31\u662f\u300c\u7de8\u8f2fmkdocs.yml\u9019\u500b\u6a94\u300d\u3002\n\n\n\u89c0\u770b \u300cmkdocs.yml\u300d\u5167\u5bb9\n\n\n\u57f7\u884c\n\n\n$ cat mkdocs.yml\n\n\n\n\n\u986f\u793a\n\n\nsite_name: My Docs\n\n\n\n\n\u89c0\u770b \u300cmkdocs.yml\u300d\u5167\u5bb9\n\n\n\u66f4\u6539\u5982\u4e0b\n\n\nsite_name: 'MkDocs \u5b78\u7fd2\u7b46\u8a18'\n\n\n\n\n\u9019\u6642\u5019\u5c31\u6703\u770b\u5230\u7db2\u9801\u7684\u6a19\u984c\u6539\u70ba\u300cMkDocs \u5b78\u7fd2\u7b46\u8a18\u300d\u4e86\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nMkDocs / \nConfiguration",
+            "title": "\u5982\u4f55\u8a2d\u5b9a"
+        },
+        {
+            "location": "/content/workflow/configuration/#_1",
+            "text": "\u524d\u9762\u300c \u5efa\u7acb\u5c08\u6848 \u300d\u6642\uff0c\u6709\u770b\u5230\u4e00\u500b\u6a94\u300cmkdocs.yml\u300d\uff0c  \u300c\u8a2d\u5b9a\u300d\u5c31\u662f\u300c\u7de8\u8f2fmkdocs.yml\u9019\u500b\u6a94\u300d\u3002",
+            "title": "\u5982\u4f55\u8a2d\u5b9a"
+        },
+        {
+            "location": "/content/workflow/configuration/#mkdocsyml",
+            "text": "\u57f7\u884c  $ cat mkdocs.yml  \u986f\u793a  site_name: My Docs",
+            "title": "\u89c0\u770b \u300cmkdocs.yml\u300d\u5167\u5bb9"
+        },
+        {
+            "location": "/content/workflow/configuration/#mkdocsyml_1",
+            "text": "\u66f4\u6539\u5982\u4e0b  site_name: 'MkDocs \u5b78\u7fd2\u7b46\u8a18'  \u9019\u6642\u5019\u5c31\u6703\u770b\u5230\u7db2\u9801\u7684\u6a19\u984c\u6539\u70ba\u300cMkDocs \u5b78\u7fd2\u7b46\u8a18\u300d\u4e86",
+            "title": "\u89c0\u770b \u300cmkdocs.yml\u300d\u5167\u5bb9"
+        },
+        {
+            "location": "/content/workflow/configuration/#_2",
+            "text": "MkDocs /  Configuration",
+            "title": "\u66f4\u591a\u53c3\u8003"
+        },
+        {
             "location": "/content/start/install-mkdocs-by-pip-requirements/",
             "text": "\u900f\u904e\u300crequirements.txt\u300d\uff0c\u4f7f\u7528\u300cpip\u300d\u5b89\u88dd\u300cMkDocs\u300d\n\n\n\u5efa\u7acb\u5c08\u6848\u8cc7\u6599\u593e\n\n\n\u5efa\u7acb\u5c08\u6848\u8cc7\u6599\u593e\n\n\n$ mkdir note\n\n\n\n\n\u5207\u63db\u5230\u5c08\u6848\u8cc7\u6599\u593e\n\n\n$ cd note\n\n\n\n\n\u64b0\u5beb requirements file\n\n\n\u64b0\u5beb\u300crequirements-to-freeze.txt\u300d\n\n\n$ echo 'mkdocs' \n requirements-to-freeze.txt\n\n\n\n\n\u89c0\u770b\u300crequirements-to-freeze.txt\u300d\u5167\u5bb9\n\n\n$ cat requirements-to-freeze.txt\n\n\n\n\n\u986f\u793a\n\n\nmkdocs\n\n\n\n\n\u5b89\u88dd mkdocs\n\n\n\u57f7\u884c\n\n\n$ pip install -r requirements-to-freeze.txt\n\n\n\n\n\u5c31\u6703\u5b89\u88dd\u300cmkdocs\u300d\u548c\u5176\u76f8\u4f9d\u7684\u5957\u4ef6\n\n\n\u89c0\u770b mkdocs \u76f8\u95dc\u7684\u8cc7\u8a0a\n\n\n\u57f7\u884c\n\n\n$ pip show mkdocs\n\n\n\n\n\u986f\u793a\n\n\n---\nMetadata-Version: 2.0\nName: mkdocs\nVersion: 0.15.3\nSummary: Project documentation with Markdown.\nHome-page: http://www.mkdocs.org\nAuthor: Tom Christie\nAuthor-email: tom@tomchristie.com\nLicense: BSD\nLocation: /home/user/.pyenv/versions/3.4.4/lib/python3.4/site-packages\nRequires: Markdown, tornado, mkdocs-bootswatch, click, PyYAML, Jinja2, livereload, mkdocs-bootstrap\nYou are using pip version 7.1.2, however version 8.0.3 is available.\nYou should consider upgrading via the 'pip install --upgrade pip' command.\n\n\n\n\n\u5efa\u7acb\u300crequirements.txt\u300d\n\n\n\u57f7\u884c\n\n\n$ pip freeze -r requirements-to-freeze.txt \n requirements.txt\n\n\n\n\n\u6703\u7522\u751f\u4e00\u500b\u6a94\u300crequirements.txt\u300d\n\n\n\u89c0\u770b\u300crequirements.txt\u300d\u5167\u5bb9\n\n\n\u57f7\u884c\n\n\n$ cat requirements.txt\n\n\n\n\n\u986f\u793a\n\n\nmkdocs==0.15.3\n## The following requirements were added by pip freeze:\nbackports-abc==0.4\nclick==6.3\nJinja2==2.8\nlivereload==2.4.1\nMarkdown==2.6.5\nMarkupSafe==0.23\nmkdocs-bootstrap==0.1.1\nmkdocs-bootswatch==0.4.0\nPyYAML==3.11\nsix==1.10.0\ntornado==4.3\n\n\n\n\n\u70ba\u5565\u8981\u7279\u5225\u7522\u751f\u300crequirements.txt\u300d\u9019\u500b\u6a94\uff1f\n\n\n\u56e0\u70ba\u525b\u525b\u300crequirements-to-freeze.txt\u300d\uff0c\u53ea\u6709\u7c21\u55ae\u8a2d\u5b9a\u8981\u5b89\u88dd\u300cmkdocs\u300d\uff0c\u4e26\u6c92\u6709\u6307\u5b9a\u7248\u672c\u3002\n\n\n\u900f\u904e\u4e0a\u9762\u6307\u4ee4\u7522\u751f\u7684\u300crequirements.txt\u300d\uff0c\u5247\u6703\u628a\u525b\u525b\u5b89\u88dd\u7684\u7248\u672c\u7d66\u7d00\u9304\u4e0a\u53bb\u3002\n\n\n\u6240\u4ee5\u7576\u9019\u500b\u9019\u500b\u5c08\u6848\u653e\u5230\u5176\u4ed6\u7684\u6a5f\u5668\uff0c\n\n\n\u5c31\u53ef\u4ee5\u900f\u904e\u4e0b\u9762\u7684\u6307\u4ee4\u5b89\u88dd\u9019\u500b\u5c08\u6848\u9700\u8981\u7684\u5957\u4ef6\uff0c\u4e26\u4e14\u5b89\u88dd\u7684\u5c31\u662f\u540c\u6a23\u7684\u7248\u672c\u3002\n\n\n$ pip install -r requirements.txt\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nA Better Pip Workflow\u2122\n\n\nPython Packaging User Guide / Installing Packages / \nRequirements files",
             "title": "\u900f\u904erequirements.txt\uff0c\u4f7f\u7528pip\u5b89\u88ddmkdocs"

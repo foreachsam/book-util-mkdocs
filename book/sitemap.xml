@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://foreachsam.github.io/book-util-mkdocs/book/</loc>
-     <lastmod>2016-03-09</lastmod>
+     <lastmod>2016-03-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,13 +13,13 @@
         
     <url>
      <loc>https://foreachsam.github.io/book-util-mkdocs/book/content/start/install-pyenv/</loc>
-     <lastmod>2016-03-09</lastmod>
+     <lastmod>2016-03-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://foreachsam.github.io/book-util-mkdocs/book/content/start/install-mkdocs/</loc>
-     <lastmod>2016-03-09</lastmod>
+     <lastmod>2016-03-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -29,19 +29,25 @@
         
     <url>
      <loc>https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/create-project/</loc>
-     <lastmod>2016-03-09</lastmod>
+     <lastmod>2016-03-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/launch-server/</loc>
-     <lastmod>2016-03-09</lastmod>
+     <lastmod>2016-03-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/build-site/</loc>
-     <lastmod>2016-03-09</lastmod>
+     <lastmod>2016-03-13</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/configuration/</loc>
+     <lastmod>2016-03-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -51,13 +57,13 @@
         
     <url>
      <loc>https://foreachsam.github.io/book-util-mkdocs/book/content/start/install-mkdocs-by-pip-requirements/</loc>
-     <lastmod>2016-03-09</lastmod>
+     <lastmod>2016-03-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://foreachsam.github.io/book-util-mkdocs/book/content/start/install-mkdocs-with-pyvenv/</loc>
-     <lastmod>2016-03-09</lastmod>
+     <lastmod>2016-03-13</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

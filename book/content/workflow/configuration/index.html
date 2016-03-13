@@ -9,19 +9,19 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>啟動伺服器 - MkDocs 使用筆記</title>
+        <title>如何設定 - MkDocs 使用筆記</title>
       
       
       
-        <link rel="canonical" href="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/launch-server/">
+        <link rel="canonical" href="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/configuration/">
       
       
         <meta name="author" content="foreachsam">
       
     
-    <meta property="og:url" content="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/launch-server/">
+    <meta property="og:url" content="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/configuration/">
     <meta property="og:title" content="MkDocs 使用筆記">
-    <meta property="og:image" content="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/launch-server//../../../">
+    <meta property="og:image" content="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/configuration//../../../">
     <meta name="apple-mobile-web-app-title" content="MkDocs 使用筆記">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -97,7 +97,7 @@
             
           </span>
         
-        啟動伺服器
+        如何設定
       </div>
     </div>
     
@@ -198,42 +198,9 @@
       
         
   <li>
-    <a class="current" title="啟動伺服器" href="./">
+    <a class="" title="啟動伺服器" href="../launch-server/">
       啟動伺服器
     </a>
-    
-      
-        
-      
-      
-        <ul>
-          
-            <li class="anchor">
-              <a title="觀看serve說明" href="#serve">
-                觀看serve說明
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="啟動伺服器" href="#_2">
-                啟動伺服器
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="更改 port" href="#port">
-                更改 port
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="更多參考" href="#_3">
-                更多參考
-              </a>
-            </li>
-          
-        </ul>
-      
     
   </li>
 
@@ -249,9 +216,36 @@
       
         
   <li>
-    <a class="" title="如何設定" href="../configuration/">
+    <a class="current" title="如何設定" href="./">
       如何設定
     </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="觀看 「mkdocs.yml」內容" href="#mkdocsyml">
+                觀看 「mkdocs.yml」內容
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="觀看 「mkdocs.yml」內容" href="#mkdocsyml_1">
+                觀看 「mkdocs.yml」內容
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="更多參考" href="#_2">
+                更多參考
+              </a>
+            </li>
+          
+        </ul>
+      
     
   </li>
 
@@ -311,83 +305,27 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="_1">啟動伺服器</h1>
-<h2 id="serve">觀看serve說明</h2>
+          <h1 id="_1">如何設定</h1>
+<p>前面「<a href="../../../book-util-mkdocs/book/content/workflow/create-project/">建立專案</a>」時，有看到一個檔「mkdocs.yml」，</p>
+<p>「設定」就是「編輯mkdocs.yml這個檔」。</p>
+<h2 id="mkdocsyml">觀看 「mkdocs.yml」內容</h2>
 <p>執行</p>
-<pre class="code"><code>$ mkdocs serve --help</code></pre>
+<pre class="code"><code class="language-sh">$ cat mkdocs.yml</code></pre>
 
 
 <p>顯示</p>
-<pre class="code"><code>Usage: mkdocs serve [OPTIONS]
-
-  Run the builtin development server
-
-Options:
-  -f, --config-file FILENAME      Provide a specific MkDocs config
-  -a, --dev-addr &lt;IP:PORT&gt;        IP address and port to serve documentation
-                                  locally (default: localhost:8000)
-  -s, --strict                    Enable strict mode. This will cause MkDocs
-                                  to abort the build on any warnings.
-  -t, --theme [yeti|amelia|journal|material|slate|flatly|spacelab|readthedocs|mkdocs|simplex|united|cyborg|bootstrap|cosmo|cerulean|readable]
-                                  The theme to use when building your
-                                  documentation.
-  --livereload / --no-livereload  Enable and disable the live reloading in the
-                                  development server.
-  -q, --quiet                     Silence warnings
-  -v, --verbose                   Enable verbose output
-  -h, --help                      Show this message and exit.</code></pre>
+<pre class="code"><code>site_name: My Docs</code></pre>
 
 
-<h2 id="_2">啟動伺服器</h2>
-<p>執行</p>
-<pre class="code"><code>$ mkdocs serve</code></pre>
+<h2 id="mkdocsyml_1">觀看 「mkdocs.yml」內容</h2>
+<p>更改如下</p>
+<pre class="code"><code>site_name: 'MkDocs 學習筆記'</code></pre>
 
 
-<p>顯示</p>
-<pre class="code"><code>INFO    -  Building documentation...
-INFO    -  Cleaning site directory
-[I 160305 18:32:17 server:281] Serving on http://127.0.0.1:8000
-[I 160305 18:32:17 handlers:59] Start watching changes
-[I 160305 18:32:17 handlers:61] Start detecting changes</code></pre>
-
-
-<p>觀看網頁</p>
-<p>執行</p>
-<pre class="code"><code>$ lynx http://127.0.0.1:8000</code></pre>
-
-
-<p>或</p>
-<pre class="code"><code>$ firefox http://127.0.0.1:8000</code></pre>
-
-
-<h2 id="port">更改 port</h2>
-<p>執行</p>
-<pre class="code"><code>mkdocs serve -a 0.0.0.0:8080</code></pre>
-
-
-<p>顯示</p>
-<pre class="code"><code class="language-sh">INFO    -  Building documentation...
-INFO    -  Cleaning site directory
-[I 160305 18:33:40 server:281] Serving on http://0.0.0.0:8080
-[I 160305 18:33:40 handlers:59] Start watching changes
-[I 160305 18:33:40 handlers:61] Start detecting changes</code></pre>
-
-
-<p>觀看網頁</p>
-<p>執行</p>
-<pre class="code"><code>$ lynx http://0.0.0.0:8080</code></pre>
-
-
-<p>或</p>
-<pre class="code"><code>$ firefox http://0.0.0.0:8080</code></pre>
-
-
-<blockquote>
-<p>當 bind 「<strong>0.0.0.0</strong>」 可以從外部連進來。</p>
-</blockquote>
-<h2 id="_3">更多參考</h2>
+<p>這時候就會看到網頁的標題改為「MkDocs 學習筆記」了</p>
+<h2 id="_2">更多參考</h2>
 <ul>
-<li>MkDocs / <a href="http://www.mkdocs.org/#getting-started">Getting started</a></li>
+<li>MkDocs / <a href="http://www.mkdocs.org/user-guide/configuration/">Configuration</a></li>
 </ul>
           <aside class="copyright" role="note">
             
@@ -407,7 +345,7 @@ INFO    -  Cleaning site directory
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href="../create-project/" title="建立專案">
+        <a href="../build-site/" title="產生網頁檔">
           <span class="direction">
             上一頁
           </span>
@@ -417,7 +355,7 @@ INFO    -  Cleaning site directory
             </div>
             <div class="stretch">
               <div class="title">
-                建立專案
+                產生網頁檔
               </div>
             </div>
           </div>
@@ -426,14 +364,14 @@ INFO    -  Cleaning site directory
     </div>
     <div class="next">
       
-        <a href="../build-site/" title="產生網頁檔">
+        <a href="../../start/install-mkdocs-by-pip-requirements/" title="透過requirements.txt，使用pip安裝mkdocs">
           <span class="direction">
             下一頁
           </span>
           <div class="page">
             <div class="stretch">
               <div class="title">
-                產生網頁檔
+                透過requirements.txt，使用pip安裝mkdocs
               </div>
             </div>
             <div class="button button-next" role="button" aria-label="Next">
