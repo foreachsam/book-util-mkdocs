@@ -206,6 +206,36 @@
             "title": "\u66f4\u591a\u53c3\u8003"
         },
         {
+            "location": "/content/workflow/config-theme/",
+            "text": "\u8a2d\u5b9a\u4f48\u666f\u4e3b\u984c\n\n\n\u5f9e\u300c\n\u9019\u88e1\n\u300d\u6216\u662f\u300c\n\u9019\u88e1\n\u300d\uff0c\u53ef\u4ee5\u627e\u5230\u4e00\u4e9btheme\u53ef\u4ee5\u66ff\u63db\u4f7f\u7528\u3002\n\n\n\u8a2d\u5b9a\u65b9\u5f0f\n\n\n\u7de8\u8f2f\u300cmkdocs.yml\u300d\n\n\ntheme: readthedocs\n\n\n\n\n\u4e0a\u9762\u5c31\u662f\u8a2d\u5b9atheme\u70ba\u300creadthedocs\u300d\n\n\n\u5167\u5efa\u7684theme\n\n\n\u5728\u6211\u7684\u7cfb\u7d71\uff0c\u5167\u5efa\u7684\u6709\u5169\u500b\n\n\n$ ls ~/.pyenv/versions/3.4.4/lib/python3.4/site-packages/mkdocs/themes -1\n\n\n\n\n\u986f\u793a\n\n\n__init__.py\nmkdocs\n__pycache__\nreadthedocs\n\n\n\n\n\u4e5f\u5c31\u662f\u5167\u5efa\u7684theme\u6709\u300cmkdocs\u300d\u548c\u300creadthedocs\u300d\u53ef\u4ee5\u9078\u3002\n\n\n\u984d\u5916\u7684theme\n\n\n\n\nmkdocs-bootstrap\n\n\nmkdocs-bootswatch\n\n\nmkdocs-material\n (\nwarehouse\n) (\npypi\n) (\ngithub\n)\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nMkDocs / \nTheming our documentation\n\n\nMkDocs / \nStyling your docs\n\n\nMkDocs / \nCustom themes\n\n\nGithub / mkdocs / \nMkDocs Themes",
+            "title": "\u8a2d\u5b9a\u4f48\u666f\u4e3b\u984c"
+        },
+        {
+            "location": "/content/workflow/config-theme/#_1",
+            "text": "\u5f9e\u300c \u9019\u88e1 \u300d\u6216\u662f\u300c \u9019\u88e1 \u300d\uff0c\u53ef\u4ee5\u627e\u5230\u4e00\u4e9btheme\u53ef\u4ee5\u66ff\u63db\u4f7f\u7528\u3002",
+            "title": "\u8a2d\u5b9a\u4f48\u666f\u4e3b\u984c"
+        },
+        {
+            "location": "/content/workflow/config-theme/#_2",
+            "text": "\u7de8\u8f2f\u300cmkdocs.yml\u300d  theme: readthedocs  \u4e0a\u9762\u5c31\u662f\u8a2d\u5b9atheme\u70ba\u300creadthedocs\u300d",
+            "title": "\u8a2d\u5b9a\u65b9\u5f0f"
+        },
+        {
+            "location": "/content/workflow/config-theme/#theme",
+            "text": "\u5728\u6211\u7684\u7cfb\u7d71\uff0c\u5167\u5efa\u7684\u6709\u5169\u500b  $ ls ~/.pyenv/versions/3.4.4/lib/python3.4/site-packages/mkdocs/themes -1  \u986f\u793a  __init__.py\nmkdocs\n__pycache__\nreadthedocs  \u4e5f\u5c31\u662f\u5167\u5efa\u7684theme\u6709\u300cmkdocs\u300d\u548c\u300creadthedocs\u300d\u53ef\u4ee5\u9078\u3002",
+            "title": "\u5167\u5efa\u7684theme"
+        },
+        {
+            "location": "/content/workflow/config-theme/#theme_1",
+            "text": "mkdocs-bootstrap  mkdocs-bootswatch  mkdocs-material  ( warehouse ) ( pypi ) ( github )",
+            "title": "\u984d\u5916\u7684theme"
+        },
+        {
+            "location": "/content/workflow/config-theme/#_3",
+            "text": "MkDocs /  Theming our documentation  MkDocs /  Styling your docs  MkDocs /  Custom themes  Github / mkdocs /  MkDocs Themes",
+            "title": "\u66f4\u591a\u53c3\u8003"
+        },
+        {
             "location": "/content/start/install-mkdocs-by-pip-requirements/",
             "text": "\u900f\u904e\u300crequirements.txt\u300d\uff0c\u4f7f\u7528\u300cpip\u300d\u5b89\u88dd\u300cMkDocs\u300d\n\n\n\u5efa\u7acb\u5c08\u6848\u8cc7\u6599\u593e\n\n\n\u5efa\u7acb\u5c08\u6848\u8cc7\u6599\u593e\n\n\n$ mkdir note\n\n\n\n\n\u5207\u63db\u5230\u5c08\u6848\u8cc7\u6599\u593e\n\n\n$ cd note\n\n\n\n\n\u64b0\u5beb requirements file\n\n\n\u64b0\u5beb\u300crequirements-to-freeze.txt\u300d\n\n\n$ echo 'mkdocs' \n requirements-to-freeze.txt\n\n\n\n\n\u89c0\u770b\u300crequirements-to-freeze.txt\u300d\u5167\u5bb9\n\n\n$ cat requirements-to-freeze.txt\n\n\n\n\n\u986f\u793a\n\n\nmkdocs\n\n\n\n\n\u5b89\u88dd mkdocs\n\n\n\u57f7\u884c\n\n\n$ pip install -r requirements-to-freeze.txt\n\n\n\n\n\u5c31\u6703\u5b89\u88dd\u300cmkdocs\u300d\u548c\u5176\u76f8\u4f9d\u7684\u5957\u4ef6\n\n\n\u89c0\u770b mkdocs \u76f8\u95dc\u7684\u8cc7\u8a0a\n\n\n\u57f7\u884c\n\n\n$ pip show mkdocs\n\n\n\n\n\u986f\u793a\n\n\n---\nMetadata-Version: 2.0\nName: mkdocs\nVersion: 0.15.3\nSummary: Project documentation with Markdown.\nHome-page: http://www.mkdocs.org\nAuthor: Tom Christie\nAuthor-email: tom@tomchristie.com\nLicense: BSD\nLocation: /home/user/.pyenv/versions/3.4.4/lib/python3.4/site-packages\nRequires: Markdown, tornado, mkdocs-bootswatch, click, PyYAML, Jinja2, livereload, mkdocs-bootstrap\nYou are using pip version 7.1.2, however version 8.0.3 is available.\nYou should consider upgrading via the 'pip install --upgrade pip' command.\n\n\n\n\n\u5efa\u7acb\u300crequirements.txt\u300d\n\n\n\u57f7\u884c\n\n\n$ pip freeze -r requirements-to-freeze.txt \n requirements.txt\n\n\n\n\n\u6703\u7522\u751f\u4e00\u500b\u6a94\u300crequirements.txt\u300d\n\n\n\u89c0\u770b\u300crequirements.txt\u300d\u5167\u5bb9\n\n\n\u57f7\u884c\n\n\n$ cat requirements.txt\n\n\n\n\n\u986f\u793a\n\n\nmkdocs==0.15.3\n## The following requirements were added by pip freeze:\nbackports-abc==0.4\nclick==6.3\nJinja2==2.8\nlivereload==2.4.1\nMarkdown==2.6.5\nMarkupSafe==0.23\nmkdocs-bootstrap==0.1.1\nmkdocs-bootswatch==0.4.0\nPyYAML==3.11\nsix==1.10.0\ntornado==4.3\n\n\n\n\n\u70ba\u5565\u8981\u7279\u5225\u7522\u751f\u300crequirements.txt\u300d\u9019\u500b\u6a94\uff1f\n\n\n\u56e0\u70ba\u525b\u525b\u300crequirements-to-freeze.txt\u300d\uff0c\u53ea\u6709\u7c21\u55ae\u8a2d\u5b9a\u8981\u5b89\u88dd\u300cmkdocs\u300d\uff0c\u4e26\u6c92\u6709\u6307\u5b9a\u7248\u672c\u3002\n\n\n\u900f\u904e\u4e0a\u9762\u6307\u4ee4\u7522\u751f\u7684\u300crequirements.txt\u300d\uff0c\u5247\u6703\u628a\u525b\u525b\u5b89\u88dd\u7684\u7248\u672c\u7d66\u7d00\u9304\u4e0a\u53bb\u3002\n\n\n\u6240\u4ee5\u7576\u9019\u500b\u9019\u500b\u5c08\u6848\u653e\u5230\u5176\u4ed6\u7684\u6a5f\u5668\uff0c\n\n\n\u5c31\u53ef\u4ee5\u900f\u904e\u4e0b\u9762\u7684\u6307\u4ee4\u5b89\u88dd\u9019\u500b\u5c08\u6848\u9700\u8981\u7684\u5957\u4ef6\uff0c\u4e26\u4e14\u5b89\u88dd\u7684\u5c31\u662f\u540c\u6a23\u7684\u7248\u672c\u3002\n\n\n$ pip install -r requirements.txt\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nA Better Pip Workflow\u2122\n\n\nPython Packaging User Guide / Installing Packages / \nRequirements files",
             "title": "\u900f\u904erequirements.txt\uff0c\u4f7f\u7528pip\u5b89\u88ddmkdocs"

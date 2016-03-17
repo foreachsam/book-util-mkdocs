@@ -9,19 +9,19 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>如何設定 - MkDocs 使用筆記</title>
+        <title>設定佈景主題 - MkDocs 使用筆記</title>
       
       
       
-        <link rel="canonical" href="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/configuration/">
+        <link rel="canonical" href="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/config-theme/">
       
       
         <meta name="author" content="foreachsam">
       
     
-    <meta property="og:url" content="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/configuration/">
+    <meta property="og:url" content="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/config-theme/">
     <meta property="og:title" content="MkDocs 使用筆記">
-    <meta property="og:image" content="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/configuration//../../../">
+    <meta property="og:image" content="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/config-theme//../../../">
     <meta name="apple-mobile-web-app-title" content="MkDocs 使用筆記">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -97,7 +97,7 @@
             
           </span>
         
-        如何設定
+        設定佈景主題
       </div>
     </div>
     
@@ -216,8 +216,17 @@
       
         
   <li>
-    <a class="current" title="如何設定" href="./">
+    <a class="" title="如何設定" href="../configuration/">
       如何設定
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="current" title="設定佈景主題" href="./">
+      設定佈景主題
     </a>
     
       
@@ -227,34 +236,31 @@
         <ul>
           
             <li class="anchor">
-              <a title="觀看 「mkdocs.yml」內容" href="#mkdocsyml">
-                觀看 「mkdocs.yml」內容
+              <a title="設定方式" href="#_2">
+                設定方式
               </a>
             </li>
           
             <li class="anchor">
-              <a title="觀看 「mkdocs.yml」內容" href="#mkdocsyml_1">
-                觀看 「mkdocs.yml」內容
+              <a title="內建的theme" href="#theme">
+                內建的theme
               </a>
             </li>
           
             <li class="anchor">
-              <a title="更多參考" href="#_2">
+              <a title="額外的theme" href="#theme_1">
+                額外的theme
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="更多參考" href="#_3">
                 更多參考
               </a>
             </li>
           
         </ul>
       
-    
-  </li>
-
-      
-        
-  <li>
-    <a class="" title="設定佈景主題" href="../config-theme/">
-      設定佈景主題
-    </a>
     
   </li>
 
@@ -314,27 +320,39 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="_1">如何設定</h1>
-<p>前面「<a href="http://foreachsam.github.io/book-util-mkdocs/book/content/workflow/create-project/">建立專案</a>」時，有看到一個檔「mkdocs.yml」，</p>
-<p>「設定」就是「編輯mkdocs.yml這個檔」。</p>
-<h2 id="mkdocsyml">觀看 「mkdocs.yml」內容</h2>
-<p>執行</p>
-<pre class="code"><code class="language-sh">$ cat mkdocs.yml</code></pre>
+          <h1 id="_1">設定佈景主題</h1>
+<p>從「<a href="http://www.mkdocs.org/user-guide/styling-your-docs/#built-in-themes">這裡</a>」或是「<a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">這裡</a>」，可以找到一些theme可以替換使用。</p>
+<h2 id="_2">設定方式</h2>
+<p>編輯「mkdocs.yml」</p>
+<pre class="code"><code>theme: readthedocs</code></pre>
+
+
+<p>上面就是設定theme為「readthedocs」</p>
+<h2 id="theme">內建的theme</h2>
+<p>在我的系統，內建的有兩個</p>
+<pre class="code"><code>$ ls ~/.pyenv/versions/3.4.4/lib/python3.4/site-packages/mkdocs/themes -1</code></pre>
 
 
 <p>顯示</p>
-<pre class="code"><code>site_name: My Docs</code></pre>
+<pre class="code"><code>__init__.py
+mkdocs
+__pycache__
+readthedocs</code></pre>
 
 
-<h2 id="mkdocsyml_1">觀看 「mkdocs.yml」內容</h2>
-<p>更改如下</p>
-<pre class="code"><code>site_name: 'MkDocs 學習筆記'</code></pre>
-
-
-<p>這時候就會看到網頁的標題改為「MkDocs 學習筆記」了</p>
-<h2 id="_2">更多參考</h2>
+<p>也就是內建的theme有「mkdocs」和「readthedocs」可以選。</p>
+<h2 id="theme_1">額外的theme</h2>
 <ul>
-<li>MkDocs / <a href="http://www.mkdocs.org/user-guide/configuration/">Configuration</a></li>
+<li>mkdocs-bootstrap</li>
+<li>mkdocs-bootswatch</li>
+<li><a href="http://squidfunk.github.io/mkdocs-material/">mkdocs-material</a> (<a href="https://warehouse.python.org/project/mkdocs-material/">warehouse</a>) (<a href="https://pypi.python.org/pypi/mkdocs-material">pypi</a>) (<a href="https://github.com/squidfunk/mkdocs-material">github</a>)</li>
+</ul>
+<h2 id="_3">更多參考</h2>
+<ul>
+<li>MkDocs / <a href="http://www.mkdocs.org/#theming-our-documentation">Theming our documentation</a></li>
+<li>MkDocs / <a href="http://www.mkdocs.org/user-guide/styling-your-docs/">Styling your docs</a></li>
+<li>MkDocs / <a href="http://www.mkdocs.org/user-guide/custom-themes/">Custom themes</a></li>
+<li>Github / mkdocs / <a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">MkDocs Themes</a></li>
 </ul>
           <aside class="copyright" role="note">
             
@@ -354,7 +372,7 @@
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href="../build-site/" title="產生網頁檔">
+        <a href="../configuration/" title="如何設定">
           <span class="direction">
             上一頁
           </span>
@@ -364,7 +382,7 @@
             </div>
             <div class="stretch">
               <div class="title">
-                產生網頁檔
+                如何設定
               </div>
             </div>
           </div>
@@ -373,14 +391,14 @@
     </div>
     <div class="next">
       
-        <a href="../config-theme/" title="設定佈景主題">
+        <a href="../../start/install-mkdocs-by-pip-requirements/" title="透過requirements.txt，使用pip安裝mkdocs">
           <span class="direction">
             下一頁
           </span>
           <div class="page">
             <div class="stretch">
               <div class="title">
-                設定佈景主題
+                透過requirements.txt，使用pip安裝mkdocs
               </div>
             </div>
             <div class="button button-next" role="button" aria-label="Next">
