@@ -254,6 +254,12 @@
             </li>
           
             <li class="anchor">
+              <a title="如何知道系統有目前有哪些theme可以選擇" href="#theme_2">
+                如何知道系統有目前有哪些theme可以選擇
+              </a>
+            </li>
+          
+            <li class="anchor">
               <a title="更多參考" href="#_4">
                 更多參考
               </a>
@@ -402,6 +408,20 @@ readthedocs</code></pre>
 <li><a href="http://mkdocs.github.io/mkdocs-bootswatch/">mkdocs-bootswatch</a> (<a href="https://warehouse.python.org/project/mkdocs-bootswatch/">warehouse</a>) (<a href="https://pypi.python.org/pypi/mkdocs-bootswatch">pypi</a>) (<a href="https://github.com/mkdocs/mkdocs-bootswatch">github</a>)</li>
 <li><a href="http://squidfunk.github.io/mkdocs-material/">mkdocs-material</a> (<a href="https://warehouse.python.org/project/mkdocs-material/">warehouse</a>) (<a href="https://pypi.python.org/pypi/mkdocs-material">pypi</a>) (<a href="https://github.com/squidfunk/mkdocs-material">github</a>)</li>
 </ul>
+<h2 id="theme_2">如何知道系統有目前有哪些theme可以選擇</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ mkdocs build --help | grep theme</code></pre>
+
+
+<p>或是</p>
+<pre class="code"><code class="language-sh">$ mkdocs serve --help | grep theme</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>-t, --theme [readthedocs|cyborg|united|amelia|yeti|journal|readable|simplex|mkdocs|slate|material|bootstrap|flatly|cosmo|cerulean|spacelab]
+                                The theme to use when building your</code></pre>
+
+
 <h3 id="_3">安裝</h3>
 <p>安裝「mkdocs-material」</p>
 <pre class="code"><code class="language-sh">$ pip install mkdocs-material</code></pre>
