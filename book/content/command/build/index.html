@@ -9,19 +9,19 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>設定佈景主題 - MkDocs 使用筆記</title>
+        <title>build - MkDocs 使用筆記</title>
       
       
       
-        <link rel="canonical" href="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/config-theme/">
+        <link rel="canonical" href="https://foreachsam.github.io/book-util-mkdocs/book/content/command/build/">
       
       
         <meta name="author" content="foreachsam">
       
     
-    <meta property="og:url" content="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/config-theme/">
+    <meta property="og:url" content="https://foreachsam.github.io/book-util-mkdocs/book/content/command/build/">
     <meta property="og:title" content="MkDocs 使用筆記">
-    <meta property="og:image" content="https://foreachsam.github.io/book-util-mkdocs/book/content/workflow/config-theme//../../../">
+    <meta property="og:image" content="https://foreachsam.github.io/book-util-mkdocs/book/content/command/build//../../../">
     <meta name="apple-mobile-web-app-title" content="MkDocs 使用筆記">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -92,12 +92,12 @@
           <span class="path">
             
               
-                基本操作 <i class="icon icon-link"></i>
+                指令 <i class="icon icon-link"></i>
               
             
           </span>
         
-        設定佈景主題
+        build
       </div>
     </div>
     
@@ -189,7 +189,7 @@
       
         
   <li>
-    <a class="" title="建立專案" href="../create-project/">
+    <a class="" title="建立專案" href="../../workflow/create-project/">
       建立專案
     </a>
     
@@ -198,7 +198,7 @@
       
         
   <li>
-    <a class="" title="啟動伺服器" href="../launch-server/">
+    <a class="" title="啟動伺服器" href="../../workflow/launch-server/">
       啟動伺服器
     </a>
     
@@ -207,7 +207,7 @@
       
         
   <li>
-    <a class="" title="產生網頁檔" href="../build-site/">
+    <a class="" title="產生網頁檔" href="../../workflow/build-site/">
       產生網頁檔
     </a>
     
@@ -216,7 +216,7 @@
       
         
   <li>
-    <a class="" title="如何設定" href="../configuration/">
+    <a class="" title="如何設定" href="../../workflow/configuration/">
       如何設定
     </a>
     
@@ -225,42 +225,9 @@
       
         
   <li>
-    <a class="current" title="設定佈景主題" href="./">
+    <a class="" title="設定佈景主題" href="../../workflow/config-theme/">
       設定佈景主題
     </a>
-    
-      
-        
-      
-      
-        <ul>
-          
-            <li class="anchor">
-              <a title="設定方式" href="#_2">
-                設定方式
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="內建的theme" href="#theme">
-                內建的theme
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="額外的theme" href="#theme_1">
-                額外的theme
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="更多參考" href="#_4">
-                更多參考
-              </a>
-            </li>
-          
-        </ul>
-      
     
   </li>
 
@@ -276,7 +243,7 @@
       
         
   <li>
-    <a class="" title="new" href="../../command/new/">
+    <a class="" title="new" href="../new/">
       new
     </a>
     
@@ -285,7 +252,7 @@
       
         
   <li>
-    <a class="" title="serve" href="../../command/serve/">
+    <a class="" title="serve" href="../serve/">
       serve
     </a>
     
@@ -294,16 +261,31 @@
       
         
   <li>
-    <a class="" title="build" href="../../command/build/">
+    <a class="current" title="build" href="./">
       build
     </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="help" href="#help">
+                help
+              </a>
+            </li>
+          
+        </ul>
+      
     
   </li>
 
       
         
   <li>
-    <a class="" title="json" href="../../command/json/">
+    <a class="" title="json" href="../json/">
       json
     </a>
     
@@ -312,7 +294,7 @@
       
         
   <li>
-    <a class="" title="gh-deploy" href="../../command/gh-deploy/">
+    <a class="" title="gh-deploy" href="../gh-deploy/">
       gh-deploy
     </a>
     
@@ -374,46 +356,31 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="_1">設定佈景主題</h1>
-<p>從「<a href="http://www.mkdocs.org/user-guide/styling-your-docs/#built-in-themes">這裡</a>」或是「<a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">這裡</a>」，可以找到一些theme可以替換使用。</p>
-<h2 id="_2">設定方式</h2>
-<p>編輯「mkdocs.yml」</p>
-<pre class="code"><code>theme: readthedocs</code></pre>
-
-
-<p>上面就是設定theme為「readthedocs」</p>
-<h2 id="theme">內建的theme</h2>
-<p>在我的系統，內建的有兩個</p>
-<pre class="code"><code>$ ls ~/.pyenv/versions/3.4.4/lib/python3.4/site-packages/mkdocs/themes -1</code></pre>
+          <h1 id="mkdocs-build">mkdocs build</h1>
+<h2 id="help">help</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ mkdocs build --help</code></pre>
 
 
 <p>顯示</p>
-<pre class="code"><code>__init__.py
-mkdocs
-__pycache__
-readthedocs</code></pre>
+<pre class="code"><code>Usage: mkdocs build [OPTIONS]
 
+  Build the MkDocs documentation
 
-<p>也就是內建的theme有「mkdocs」和「readthedocs」可以選。</p>
-<p>除了可以看自己機器上的檔案，也可以到「<a href="https://github.com/mkdocs/mkdocs/tree/master/mkdocs/themes">GitHub</a>」上去觀看。</p>
-<h2 id="theme_1">額外的theme</h2>
-<ul>
-<li><a href="http://mkdocs.github.io/mkdocs-bootstrap/">mkdocs-bootstrap</a> (<a href="https://warehouse.python.org/project/mkdocs-bootstrap/">warehouse</a>) (<a href="https://pypi.python.org/pypi/mkdocs-bootstrap">pypi</a>) (<a href="https://github.com/mkdocs/mkdocs-bootstrap">github</a>)</li>
-<li><a href="http://mkdocs.github.io/mkdocs-bootswatch/">mkdocs-bootswatch</a> (<a href="https://warehouse.python.org/project/mkdocs-bootswatch/">warehouse</a>) (<a href="https://pypi.python.org/pypi/mkdocs-bootswatch">pypi</a>) (<a href="https://github.com/mkdocs/mkdocs-bootswatch">github</a>)</li>
-<li><a href="http://squidfunk.github.io/mkdocs-material/">mkdocs-material</a> (<a href="https://warehouse.python.org/project/mkdocs-material/">warehouse</a>) (<a href="https://pypi.python.org/pypi/mkdocs-material">pypi</a>) (<a href="https://github.com/squidfunk/mkdocs-material">github</a>)</li>
-</ul>
-<h3 id="_3">安裝</h3>
-<p>安裝「mkdocs-material」</p>
-<pre class="code"><code class="language-sh">$ pip install mkdocs-material</code></pre>
-
-
-<h2 id="_4">更多參考</h2>
-<ul>
-<li>MkDocs / <a href="http://www.mkdocs.org/#theming-our-documentation">Theming our documentation</a></li>
-<li>MkDocs / <a href="http://www.mkdocs.org/user-guide/styling-your-docs/">Styling your docs</a></li>
-<li>MkDocs / <a href="http://www.mkdocs.org/user-guide/custom-themes/">Custom themes</a></li>
-<li>Github / mkdocs / <a href="https://github.com/mkdocs/mkdocs/wiki/MkDocs-Themes">MkDocs Themes</a></li>
-</ul>
+Options:
+  -c, --clean                     Remove old files from the site_dir before
+                                  building
+  -f, --config-file FILENAME      Provide a specific MkDocs config
+  -s, --strict                    Enable strict mode. This will cause MkDocs
+                                  to abort the build on any warnings.
+  -t, --theme [cerulean|journal|readable|amelia|cyborg|yeti|flatly|bootstrap|simplex|cosmo|united|material|readthedocs|spacelab|slate|mkdocs]
+                                  The theme to use when building your
+                                  documentation.
+  -d, --site-dir PATH             The directory to output the result of the
+                                  documentation build.
+  -q, --quiet                     Silence warnings
+  -v, --verbose                   Enable verbose output
+  -h, --help                      Show this message and exit.</code></pre>
           <aside class="copyright" role="note">
             
               Copyright (c) foreachsam &ndash;
@@ -432,7 +399,7 @@ readthedocs</code></pre>
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href="../configuration/" title="如何設定">
+        <a href="../serve/" title="serve">
           <span class="direction">
             上一頁
           </span>
@@ -442,7 +409,7 @@ readthedocs</code></pre>
             </div>
             <div class="stretch">
               <div class="title">
-                如何設定
+                serve
               </div>
             </div>
           </div>
@@ -451,14 +418,14 @@ readthedocs</code></pre>
     </div>
     <div class="next">
       
-        <a href="../../command/new/" title="new">
+        <a href="../json/" title="json">
           <span class="direction">
             下一頁
           </span>
           <div class="page">
             <div class="stretch">
               <div class="title">
-                new
+                json
               </div>
             </div>
             <div class="button button-next" role="button" aria-label="Next">
