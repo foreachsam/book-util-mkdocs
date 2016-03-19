@@ -207,7 +207,7 @@
         },
         {
             "location": "/content/workflow/config-theme/",
-            "text": "\u8a2d\u5b9a\u4f48\u666f\u4e3b\u984c\n\n\n\u5f9e\u300c\n\u9019\u88e1\n\u300d\u6216\u662f\u300c\n\u9019\u88e1\n\u300d\uff0c\u53ef\u4ee5\u627e\u5230\u4e00\u4e9btheme\u53ef\u4ee5\u66ff\u63db\u4f7f\u7528\u3002\n\n\n\u8a2d\u5b9a\u65b9\u5f0f\n\n\n\u7de8\u8f2f\u300cmkdocs.yml\u300d\n\n\ntheme: readthedocs\n\n\n\n\n\u4e0a\u9762\u5c31\u662f\u8a2d\u5b9atheme\u70ba\u300creadthedocs\u300d\n\n\n\u5167\u5efa\u7684theme\n\n\n\u5728\u6211\u7684\u7cfb\u7d71\uff0c\u5167\u5efa\u7684\u6709\u5169\u500b\n\n\n$ ls ~/.pyenv/versions/3.4.4/lib/python3.4/site-packages/mkdocs/themes -1\n\n\n\n\n\u986f\u793a\n\n\n__init__.py\nmkdocs\n__pycache__\nreadthedocs\n\n\n\n\n\u4e5f\u5c31\u662f\u5167\u5efa\u7684theme\u6709\u300cmkdocs\u300d\u548c\u300creadthedocs\u300d\u53ef\u4ee5\u9078\u3002\n\n\n\u9664\u4e86\u53ef\u4ee5\u770b\u81ea\u5df1\u6a5f\u5668\u4e0a\u7684\u6a94\u6848\uff0c\u4e5f\u53ef\u4ee5\u5230\u300c\nGitHub\n\u300d\u4e0a\u53bb\u89c0\u770b\u3002\n\n\n\u984d\u5916\u7684theme\n\n\n\n\nmkdocs-bootstrap\n (\nwarehouse\n) (\npypi\n) (\ngithub\n)\n\n\nmkdocs-bootswatch\n (\nwarehouse\n) (\npypi\n) (\ngithub\n)\n\n\nmkdocs-material\n (\nwarehouse\n) (\npypi\n) (\ngithub\n)\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nMkDocs / \nTheming our documentation\n\n\nMkDocs / \nStyling your docs\n\n\nMkDocs / \nCustom themes\n\n\nGithub / mkdocs / \nMkDocs Themes",
+            "text": "\u8a2d\u5b9a\u4f48\u666f\u4e3b\u984c\n\n\n\u5f9e\u300c\n\u9019\u88e1\n\u300d\u6216\u662f\u300c\n\u9019\u88e1\n\u300d\uff0c\u53ef\u4ee5\u627e\u5230\u4e00\u4e9btheme\u53ef\u4ee5\u66ff\u63db\u4f7f\u7528\u3002\n\n\n\u8a2d\u5b9a\u65b9\u5f0f\n\n\n\u7de8\u8f2f\u300cmkdocs.yml\u300d\n\n\ntheme: readthedocs\n\n\n\n\n\u4e0a\u9762\u5c31\u662f\u8a2d\u5b9atheme\u70ba\u300creadthedocs\u300d\n\n\n\u5167\u5efa\u7684theme\n\n\n\u5728\u6211\u7684\u7cfb\u7d71\uff0c\u5167\u5efa\u7684\u6709\u5169\u500b\n\n\n$ ls ~/.pyenv/versions/3.4.4/lib/python3.4/site-packages/mkdocs/themes -1\n\n\n\n\n\u986f\u793a\n\n\n__init__.py\nmkdocs\n__pycache__\nreadthedocs\n\n\n\n\n\u4e5f\u5c31\u662f\u5167\u5efa\u7684theme\u6709\u300cmkdocs\u300d\u548c\u300creadthedocs\u300d\u53ef\u4ee5\u9078\u3002\n\n\n\u9664\u4e86\u53ef\u4ee5\u770b\u81ea\u5df1\u6a5f\u5668\u4e0a\u7684\u6a94\u6848\uff0c\u4e5f\u53ef\u4ee5\u5230\u300c\nGitHub\n\u300d\u4e0a\u53bb\u89c0\u770b\u3002\n\n\n\u984d\u5916\u7684theme\n\n\n\n\nmkdocs-bootstrap\n (\nwarehouse\n) (\npypi\n) (\ngithub\n)\n\n\nmkdocs-bootswatch\n (\nwarehouse\n) (\npypi\n) (\ngithub\n)\n\n\nmkdocs-material\n (\nwarehouse\n) (\npypi\n) (\ngithub\n)\n\n\n\n\n\u5b89\u88dd\n\n\n\u5b89\u88dd\u300cmkdocs-material\u300d\n\n\n$ pip install mkdocs-material\n\n\n\n\n\u66f4\u591a\u53c3\u8003\n\n\n\n\nMkDocs / \nTheming our documentation\n\n\nMkDocs / \nStyling your docs\n\n\nMkDocs / \nCustom themes\n\n\nGithub / mkdocs / \nMkDocs Themes",
             "title": "\u8a2d\u5b9a\u4f48\u666f\u4e3b\u984c"
         },
         {
@@ -232,6 +232,11 @@
         },
         {
             "location": "/content/workflow/config-theme/#_3",
+            "text": "\u5b89\u88dd\u300cmkdocs-material\u300d  $ pip install mkdocs-material",
+            "title": "\u5b89\u88dd"
+        },
+        {
+            "location": "/content/workflow/config-theme/#_4",
             "text": "MkDocs /  Theming our documentation  MkDocs /  Styling your docs  MkDocs /  Custom themes  Github / mkdocs /  MkDocs Themes",
             "title": "\u66f4\u591a\u53c3\u8003"
         },
